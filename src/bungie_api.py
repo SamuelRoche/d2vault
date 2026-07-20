@@ -93,27 +93,74 @@ class BungieAPI:
     MAX_REQUESTS_PER_SECOND = 2
     MIN_INTERVAL = 1.0 / MAX_REQUESTS_PER_SECOND
 
-    def __init__(self, api_key: str, oauth_token: str | None = None) -> None:
+    def __init__(
+        self,
+        api_key: str,
+        oauth_token: str | None = None,
+        refresh_token: str | None = None,
+        oauth_client_id: str | None = None,
+        oauth_client_secret: str | None = None,
+    ) -> None:
         """Initialise the client with authentication credentials.
 
         Args:
             api_key: A valid Bungie.net API key.
             oauth_token: An optional OAuth Bearer token for scoped endpoints.
+            refresh_token: OAuth refresh token for silent token renewal.
+            oauth_client_id: Bungie app OAuth client ID (needed to refresh).
+            oauth_client_secret: Bungie app OAuth client secret (needed to refresh).
         """
         self.api_key = api_key
         self.oauth_token = oauth_token
+        self.refresh_token = refresh_token
+        self.oauth_client_id = oauth_client_id
+        self.oauth_client_secret = oauth_client_secret
         self.session = requests.Session()
         self.base_url = self.BASE_URL
 
+        self._rebuild_headers()
+        self._last_request_time: float = 0.0
+
+    def _rebuild_headers(self) -> None:
+        """Re-build session headers after a token refresh."""
         headers: dict[str, str] = {
-            "X-API-Key": api_key,
+            "X-API-Key": self.api_key,
             "Accept": "application/json",
         }
-        if oauth_token:
-            headers["Authorization"] = f"Bearer {oauth_token}"
-
+        if self.oauth_token:
+            headers["Authorization"] = f"Bearer {self.oauth_token}"
+        self.session.headers.clear()
         self.session.headers.update(headers)
-        self._last_request_time: float = 0.0
+
+    def _refresh_oauth(self) -> bool:
+        """Try to refresh the OAuth token using the stored refresh token.
+
+        Returns True if the token was refreshed successfully.
+        """
+        if not self.refresh_token or not self.oauth_client_id:
+            return False
+
+        try:
+            resp = requests.post(
+                "https://www.bungie.net/Platform/App/OAuth/Token/",
+                data={
+                    "grant_type": "refresh_token",
+                    "refresh_token": self.refresh_token,
+                    "client_id": self.oauth_client_id,
+                    "client_secret": self.oauth_client_secret or "",
+                },
+                headers={"Content-Type": "application/x-www-form-urlencoded"},
+                timeout=30,
+            )
+            resp.raise_for_status()
+            data = resp.json()
+            self.oauth_token = data.get("access_token", self.oauth_token)
+            if data.get("refresh_token"):
+                self.refresh_token = data["refresh_token"]
+            self._rebuild_headers()
+            return True
+        except Exception:
+            return False
 
     def _rate_limit(self) -> None:
         """Enforce a maximum request rate by sleeping if needed."""
@@ -125,24 +172,22 @@ class BungieAPI:
     def _request(
         self, path: str, params: dict[str, Any] | None = None
     ) -> dict[str, Any]:
-        """Core request method with error handling.
+        """Core request method with error handling and OAuth auto-refresh.
 
-        Args:
-            path: API path relative to ``BASE_URL`` (e.g. ``/User/Search/``).
-            params: Optional query-string parameters.
-
-        Returns:
-            The ``Response`` JSON payload as a dictionary.
-
-        Raises:
-            BungieRateLimitError: If the API responds with HTTP 429.
-            BungieAPIError: For any non-success response, wrapping the
-                Bungie-specific error details.
-            requests.RequestException: For network-level failures.
+        If a request fails with a 404 (common when OAuth token is expired)
+        and a refresh token is available, it attempts one silent refresh
+        and retries the request once.
         """
         self._rate_limit()
         url = f"{self.base_url}{path}"
         response = self.session.get(url, params=params)
+
+        # Attempt OAuth refresh on 404 if we have a refresh token
+        if response.status_code == 404 and self.refresh_token:
+            if self._refresh_oauth():
+                # Retry once with the new token
+                self._rate_limit()
+                response = self.session.get(url, params=params)
         response.raise_for_status()  # raises for non-2xx HTTP status codes
         payload: dict[str, Any] = response.json()
 

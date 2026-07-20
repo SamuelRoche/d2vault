@@ -494,11 +494,23 @@ class VaultReader:
             components = PUBLIC_COMPONENTS
             print("  [no OAuth token — vault won't be available, only equipped gear]")
 
-        profile = self.api.get_profile(
-            membership_type,
-            membership_id,
-            components=components,
-        )
+        # Try full components first; fall back to public-only if OAuth fails
+        try:
+            profile = self.api.get_profile(
+                membership_type,
+                membership_id,
+                components=components,
+            )
+        except Exception as exc:
+            if self.api.oauth_token and components != PUBLIC_COMPONENTS:
+                print(f"  OAuth components failed ({exc}) — falling back to public-only")
+                profile = self.api.get_profile(
+                    membership_type,
+                    membership_id,
+                    components=PUBLIC_COMPONENTS,
+                )
+            else:
+                raise
 
         instances, stats, sockets, plug_states, plug_objectives = (
             self._collect_item_components(profile)

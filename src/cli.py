@@ -429,7 +429,13 @@ def cmd_analyze(args: argparse.Namespace) -> None:
     from src.bungie_api import BungieAPI
 
     oauth_token = cfg.get("oauth_token") or cfg.get("OAuth_token")
-    api = BungieAPI(api_key, oauth_token=oauth_token)
+    api = BungieAPI(
+        api_key,
+        oauth_token=oauth_token,
+        refresh_token=cfg.get("oauth_refresh_token"),
+        oauth_client_id=str(cfg.get("oauth_client_id", "")),
+        oauth_client_secret=cfg.get("oauth_client_secret"),
+    )
 
     # ---- Manifest ----
     from src.manifest_cache import ManifestCache
