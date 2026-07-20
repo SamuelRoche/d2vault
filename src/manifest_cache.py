@@ -273,7 +273,7 @@ class ManifestCache:
         return self._conn
 
     def _query_single(
-        self, table: str, hash_value: int, hash_column: str = "hash"
+        self, table: str, hash_value: int, hash_column: str = "id"
     ) -> Optional[dict]:
         """Fetch a single row from *table* by *hash_column*.
 

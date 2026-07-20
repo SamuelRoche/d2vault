@@ -219,10 +219,18 @@ def cmd_analyze(args: argparse.Namespace) -> None:
         sys.exit(1)
 
     api_key: str = cfg.get("api_key", "")
-    membership_type: int = cfg.get("membership_type", 3)
+    membership_type: int = cfg.get("membership_type", 0)
     membership_id: int = cfg.get("membership_id", 0)
     display_name: str = cfg.get("display_name", "Guardian")
     platform_str: str = cfg.get("platform", "steam")
+
+    # If membership_type isn't saved explicitly, derive it from platform string
+    if not membership_type:
+        try:
+            membership_type = _resolve_membership_type(platform_str)
+        except KeyError:
+            print(f"ERROR: Unknown platform '{platform_str}' in config.yaml.")
+            return 1
 
     if not api_key:
         print("ERROR: config.yaml is missing 'api_key'. Re-run with --setup.")
