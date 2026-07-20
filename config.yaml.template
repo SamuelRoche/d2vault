@@ -1,0 +1,14 @@
+# Destiny Vault Tool Configuration
+# Copy this file to config.yaml and fill in your details.
+
+bungie:
+  api_key: "YOUR_BUNGIE_API_KEY_HERE"
+  oauth_token: "YOUR_OAUTH_TOKEN_HERE"  # Optional, for authenticated requests
+
+platform:
+  # Destiny 2 platform (1 = Xbox, 2 = PlayStation, 3 = Steam, 4 = Blizzard, 5 = Stadia, 6 = Epic)
+  type: 3
+
+membership:
+  # Your Bungie membership ID
+  id: "YOUR_MEMBERSHIP_ID_HERE"

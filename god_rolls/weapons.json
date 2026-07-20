@@ -1,0 +1,3251 @@
+{
+  "weapons": {
+    "Fatebringer (Timelost)": {
+      "hash": 4166076519,
+      "source": "Vault of Glass (Master)",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "kinetic",
+      "type": "Hand Cannon",
+      "farming": "Farm Vault of Glass Master Templar encounter. Use Spoils of Conquest at the end of the raid to buy additional copies from the final chest.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Explosive Payload + Firefly is the classic PvE workhorse. Explosive Payload gives flat damage bonus + flinch, Firefly chains explosions on precision kills. One of the best all-around HCs in the game.",
+          "masterwork": "range",
+          "barrel_options": [
+            "Smallbore",
+            "Corkscrew Rifling",
+            "Fluted Barrel"
+          ],
+          "mag_options": [
+            "Accurized Rounds",
+            "Tactical Mag",
+            "Flared Magwell"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Explosive Payload",
+          "trait_2": "Firefly"
+        },
+        {
+          "name": "PvE Frenzy Roll",
+          "description": "Explosive Payload + Frenzy for consistent uptime on damage and handling without needing precision kills.",
+          "masterwork": "range",
+          "barrel_options": [
+            "Smallbore",
+            "Corkscrew Rifling"
+          ],
+          "mag_options": [
+            "Accurized Rounds",
+            "Tactical Mag"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Explosive Payload",
+          "trait_2": "Frenzy"
+        }
+      ]
+    },
+    "Heritage": {
+      "hash": 2271045146,
+      "source": "Deep Stone Crypt",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "kinetic",
+      "type": "Shotgun",
+      "farming": "Farm Deep Stone Crypt Atraks-1 encounter. Use Spoils of Conquest at the final chest.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Reconstruction auto-loads up to double mag, Recombination gives massive bonus damage on first shot after kills. Best-in-slot kinetic slug shotgun.",
+          "masterwork": "handling",
+          "barrel_options": [
+            "Fluted Barrel",
+            "Smallbore",
+            "Barrelshroud"
+          ],
+          "mag_options": [
+            "Assault Mag",
+            "Tactical Mag",
+            "Accurized Rounds"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Reconstruction",
+          "trait_2": "Recombination"
+        },
+        {
+          "name": "PvP Roll",
+          "description": "Slideshot + Recombination for aggressive PvP play.",
+          "masterwork": "handling",
+          "barrel_options": [
+            "Fluted Barrel",
+            "Smallbore"
+          ],
+          "mag_options": [
+            "Assault Mag",
+            "Accurized Rounds"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Slideshot",
+          "trait_2": "Killing Wind"
+        }
+      ]
+    },
+    "Succession": {
+      "hash": 2575475233,
+      "source": "Deep Stone Crypt",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "kinetic",
+      "type": "Sniper Rifle",
+      "farming": "Farm Deep Stone Crypt Security encounter. Use Spoils at final chest.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Reconstruction + Vorpal for excellent boss DPS. Reconstruction auto-loads, Vorpal gives flat 15% damage to bosses/vehicles.",
+          "masterwork": "handling",
+          "barrel_options": [
+            "Fluted Barrel",
+            "Arrowhead Brake"
+          ],
+          "mag_options": [
+            "Appended Mag",
+            "Tactical Mag"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Reconstruction",
+          "trait_2": "Vorpal Weapon"
+        },
+        {
+          "name": "PvP God Roll",
+          "description": "Snapshot + Vorpal for quick-scoping. Snapshot makes ADS instant.",
+          "masterwork": "handling",
+          "barrel_options": [
+            "Fluted Barrel",
+            "Arrowhead Brake"
+          ],
+          "mag_options": [
+            "Appended Mag",
+            "Accurized Rounds"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Snapshot Sights",
+          "trait_2": "Vorpal Weapon"
+        }
+      ]
+    },
+    "Trustee": {
+      "hash": 3755384915,
+      "source": "Deep Stone Crypt",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "energy",
+      "type": "Scout Rifle",
+      "farming": "Farm Deep Stone Crypt. Spoils at final chest.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Reconstruction + Redirection for sustained scout damage. Redirection builds up bonus damage against majors.",
+          "masterwork": "range",
+          "barrel_options": [
+            "Fluted Barrel",
+            "Smallbore",
+            "Corkscrew Rifling"
+          ],
+          "mag_options": [
+            "Tactical Mag",
+            "Appended Mag",
+            "Accurized Rounds"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Reconstruction",
+          "trait_2": "Redirection"
+        },
+        {
+          "name": "PvP Roll",
+          "description": "Surplus + Vorpal for stats boost and anti-super utility.",
+          "masterwork": "stability",
+          "barrel_options": [
+            "Smallbore",
+            "Arrowhead Brake"
+          ],
+          "mag_options": [
+            "Accurized Rounds",
+            "Steady Rounds"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Surplus",
+          "trait_2": "Vorpal Weapon"
+        }
+      ]
+    },
+    "Commemoration": {
+      "hash": 3724191071,
+      "source": "Deep Stone Crypt",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "power",
+      "type": "Machine Gun",
+      "farming": "Farm Deep Stone Crypt final boss. Spoils at final chest.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Reconstruction + Killing Tally. Best legendary MG in the game. Reconstruction doubles the mag, Killing Tally stacks damage. Devastating add clear and decent sustain.",
+          "masterwork": "range",
+          "barrel_options": [
+            "Arrowhead Brake",
+            "Smallbore",
+            "Corkscrew Rifling"
+          ],
+          "mag_options": [
+            "Appended Mag",
+            "Tactical Mag",
+            "Extended Mag"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Reconstruction",
+          "trait_2": "Killing Tally"
+        }
+      ]
+    },
+    "Calus Mini-Tool": {
+      "hash": 2065570181,
+      "source": "Presage / Crown of Sorrow",
+      "craftable": true,
+      "deepsight_required": 5,
+      "slot": "energy",
+      "type": "Submachine Gun",
+      "farming": "Farm Presage exotic mission on rotating weeks. Buy red borders from the Crown of Sorrow vendor on the Leviathan.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Threat Detector + Incandescent. Top-tier solar add-clear. Incandescent spreads scorch, Threat Detector boosts handling/reload when enemies are near.",
+          "masterwork": "range",
+          "barrel_options": [
+            "Fluted Barrel",
+            "Smallbore",
+            "Corkscrew Rifling",
+            "Hammer Forged Rifling"
+          ],
+          "mag_options": [
+            "Flared Magwell",
+            "Tactical Mag",
+            "Appended Mag"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Threat Detector",
+          "trait_2": "Incandescent"
+        },
+        {
+          "name": "PvE Surplus Roll",
+          "description": "Unrelenting + Incandescent for healing build.",
+          "masterwork": "range",
+          "barrel_options": [
+            "Smallbore",
+            "Corkscrew Rifling"
+          ],
+          "mag_options": [
+            "Flared Magwell",
+            "Tactical Mag"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Unrelenting",
+          "trait_2": "Incandescent"
+        }
+      ]
+    },
+    "Austringer": {
+      "hash": 2111560529,
+      "source": "Presage / Crown of Sorrow",
+      "craftable": true,
+      "deepsight_required": 5,
+      "slot": "kinetic",
+      "type": "Hand Cannon",
+      "farming": "Farm Presage exotic mission. Buy from Crown of Sorrow vendor.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Outlaw + Rampage. Classic precision HC roll. Outlaw for lightning reload, Rampage for stacking damage.",
+          "masterwork": "range",
+          "barrel_options": [
+            "Hammer Forged Rifling",
+            "Smallbore",
+            "Corkscrew Rifling"
+          ],
+          "mag_options": [
+            "Accurized Rounds",
+            "Tactical Mag",
+            "Flared Magwell"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Outlaw",
+          "trait_2": "Rampage"
+        },
+        {
+          "name": "PvP God Roll",
+          "description": "Eye of the Storm + Rangefinder. Peak PvP HC. EotS gives accuracy/reticle bloom reduction as shields drop, Rangefinder increases zoom and range.",
+          "masterwork": "range",
+          "barrel_options": [
+            "Hammer Forged Rifling",
+            "Smallbore",
+            "Full Bore"
+          ],
+          "mag_options": [
+            "Accurized Rounds",
+            "Ricochet Rounds"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Eye of the Storm",
+          "trait_2": "Rangefinder"
+        }
+      ]
+    },
+    "Beloved": {
+      "hash": 3269828339,
+      "source": "Presage / Crown of Sorrow",
+      "craftable": true,
+      "deepsight_required": 5,
+      "slot": "energy",
+      "type": "Sniper Rifle",
+      "farming": "Farm Presage exotic mission. Buy from Crown of Sorrow vendor.",
+      "rolls": [
+        {
+          "name": "PvP God Roll",
+          "description": "Snapshot Sights + Quickdraw. Legendary aggressive sniper with Snapshot + Quickdraw is the god roll for PvP. No contest.",
+          "masterwork": "handling",
+          "barrel_options": [
+            "Fluted Barrel",
+            "Arrowhead Brake",
+            "Smallbore"
+          ],
+          "mag_options": [
+            "Accurized Rounds",
+            "Tactical Mag",
+            "Appended Mag"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Snapshot Sights",
+          "trait_2": "Quickdraw"
+        },
+        {
+          "name": "PvP No Distractions Roll",
+          "description": "No Distractions + Quickdraw for flinch resistance in lane battles.",
+          "masterwork": "handling",
+          "barrel_options": [
+            "Fluted Barrel",
+            "Arrowhead Brake"
+          ],
+          "mag_options": [
+            "Accurized Rounds",
+            "Tactical Mag"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "No Distractions",
+          "trait_2": "Quickdraw"
+        }
+      ]
+    },
+    "Drang (Baroque)": {
+      "hash": 3244774908,
+      "source": "Presage / Crown of Sorrow",
+      "craftable": true,
+      "deepsight_required": 5,
+      "slot": "energy",
+      "type": "Sidearm",
+      "farming": "Farm Presage exotic mission. Buy from Crown of Sorrow vendor.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Incandescent + Wellspring. Pairs with Vexcalibur? No, pairs with Sturm for ridiculous overcharge. Incandescent for solar add clear, Wellspring for ability uptime.",
+          "masterwork": "range",
+          "barrel_options": [
+            "Hammer Forged Rifling",
+            "Smallbore",
+            "Corkscrew Rifling"
+          ],
+          "mag_options": [
+            "Accurized Rounds",
+            "Tactical Mag",
+            "Flared Magwell"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Incandescent",
+          "trait_2": "Wellspring"
+        },
+        {
+          "name": "PvP Roll",
+          "description": "Moving Target + Zen Moment for sticky aim.",
+          "masterwork": "range",
+          "barrel_options": [
+            "Hammer Forged Rifling",
+            "Smallbore"
+          ],
+          "mag_options": [
+            "Accurized Rounds",
+            "Ricochet Rounds"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Moving Target",
+          "trait_2": "Zen Moment"
+        }
+      ]
+    },
+    "Zaouli's Bane": {
+      "hash": 1493588311,
+      "source": "King's Fall",
+      "craftable": true,
+      "deepsight_required": 5,
+      "slot": "energy",
+      "type": "Hand Cannon",
+      "farming": "Farm King's Fall raid. Use Spoils at the end to buy additional copies.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Explosive Payload + Incandescent. The best solar HC for add clear. Explosive Payload for extra damage, Incandescent spreads scorch everywhere. Explodes on every kill.",
+          "masterwork": "handling",
+          "barrel_options": [
+            "Fluted Barrel",
+            "Smallbore",
+            "Corkscrew Rifling"
+          ],
+          "mag_options": [
+            "Flared Magwell",
+            "Tactical Mag",
+            "Accurized Rounds"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Explosive Payload",
+          "trait_2": "Incandescent"
+        },
+        {
+          "name": "PvE Firefly Roll",
+          "description": "Explosive Payload + Firefly for classic precision chain explosions.",
+          "masterwork": "handling",
+          "barrel_options": [
+            "Smallbore",
+            "Corkscrew Rifling"
+          ],
+          "mag_options": [
+            "Flared Magwell",
+            "Tactical Mag"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Explosive Payload",
+          "trait_2": "Firefly"
+        }
+      ]
+    },
+    "Smite of Merain": {
+      "hash": 3467674077,
+      "source": "King's Fall",
+      "craftable": true,
+      "deepsight_required": 5,
+      "slot": "kinetic",
+      "type": "Pulse Rifle",
+      "farming": "Farm King's Fall raid. Spoils at final chest.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Firefly + One For All. Firefly for add clear explosions, One For All for massive damage buff after hitting 3 targets (easy with pulses).",
+          "masterwork": "range",
+          "barrel_options": [
+            "Arrowhead Brake",
+            "Smallbore",
+            "Chambered Compensator"
+          ],
+          "mag_options": [
+            "Flared Magwell",
+            "Tactical Mag",
+            "Appended Mag"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Firefly",
+          "trait_2": "One For All"
+        },
+        {
+          "name": "PvE Demo Roll",
+          "description": "Demolitionist + Adrenaline Junkie for grenade-centric builds.",
+          "masterwork": "reload",
+          "barrel_options": [
+            "Arrowhead Brake",
+            "Smallbore"
+          ],
+          "mag_options": [
+            "Flared Magwell",
+            "Tactical Mag"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Demolitionist",
+          "trait_2": "Adrenaline Junkie"
+        }
+      ]
+    },
+    "Doom of Chelchis": {
+      "hash": 896789903,
+      "source": "King's Fall",
+      "craftable": true,
+      "deepsight_required": 5,
+      "slot": "energy",
+      "type": "Scout Rifle",
+      "farming": "Farm King's Fall Oryx encounter. Spoils at final chest.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Explosive Payload + One For All. Explosive Payload for range damage, OFA for easy 35% damage buff. Great for GMs and endgame.",
+          "masterwork": "range",
+          "barrel_options": [
+            "Fluted Barrel",
+            "Smallbore",
+            "Arrowhead Brake"
+          ],
+          "mag_options": [
+            "Appended Mag",
+            "Tactical Mag",
+            "Accurized Rounds"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Explosive Payload",
+          "trait_2": "One For All"
+        },
+        {
+          "name": "Anti-Barrier Roll",
+          "description": "Shoot to Loot + One For All for ammo economy and consistent damage.",
+          "masterwork": "range",
+          "barrel_options": [
+            "Fluted Barrel",
+            "Smallbore"
+          ],
+          "mag_options": [
+            "Appended Mag",
+            "Tactical Mag"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Shoot to Loot",
+          "trait_2": "One For All"
+        }
+      ]
+    },
+    "Cataclysmic": {
+      "hash": 3295672174,
+      "source": "Vow of the Disciple",
+      "craftable": true,
+      "deepsight_required": 5,
+      "slot": "power",
+      "type": "Linear Fusion Rifle",
+      "farming": "Farm Vow of the Disciple raid. Spoils at final chest. Red borders from chests.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Fourth Time's the Charm + Bait and Switch. The undisputed king of LFRs. FTTC refunds rounds on precision hits, Bait and Switch gives 35% damage for using all weapons. God roll DPS weapon.",
+          "masterwork": "charge time",
+          "barrel_options": [
+            "Arrowhead Brake",
+            "Fluted Barrel"
+          ],
+          "mag_options": [
+            "Enhanced Battery",
+            "Ionized Battery",
+            "Liquid Coils"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Fourth Time's the Charm",
+          "trait_2": "Bait and Switch"
+        },
+        {
+          "name": "PvE Solo Roll",
+          "description": "Fourth Time's the Charm + Focused Fury for solo play where you can't proc B&S.",
+          "masterwork": "charge time",
+          "barrel_options": [
+            "Arrowhead Brake",
+            "Fluted Barrel"
+          ],
+          "mag_options": [
+            "Enhanced Battery",
+            "Liquid Coils"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Fourth Time's the Charm",
+          "trait_2": "Focused Fury"
+        }
+      ]
+    },
+    "Forbearance": {
+      "hash": 1324397319,
+      "source": "Vow of the Disciple",
+      "craftable": true,
+      "deepsight_required": 5,
+      "slot": "energy",
+      "type": "Grenade Launcher",
+      "farming": "Farm Vow of the Disciple. Spoils at final chest.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Ambitious Assassin + Chain Reaction. Best add-clear GL in the game. Ambitious Assassin gives massive overflow on kills, Chain Reaction chains explosions. Destroys entire rooms.",
+          "masterwork": "velocity",
+          "barrel_options": [
+            "Quick Launch",
+            "Hard Launch",
+            "Volatile Launch"
+          ],
+          "mag_options": [
+            "High Velocity Rounds",
+            "Spike Grenades",
+            "Implosion Rounds"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Ambitious Assassin",
+          "trait_2": "Chain Reaction"
+        },
+        {
+          "name": "PvE Stats Roll",
+          "description": "Stats for All + Chain Reaction for stat boosts while doing add clear.",
+          "masterwork": "velocity",
+          "barrel_options": [
+            "Quick Launch",
+            "Hard Launch"
+          ],
+          "mag_options": [
+            "Spike Grenades",
+            "High Velocity Rounds"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Stats for All",
+          "trait_2": "Chain Reaction"
+        }
+      ]
+    },
+    "Insidious": {
+      "hash": 1316195483,
+      "source": "Vow of the Disciple",
+      "craftable": true,
+      "deepsight_required": 5,
+      "slot": "energy",
+      "type": "Pulse Rifle",
+      "farming": "Farm Vow of the Disciple. Spoils at final chest.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Rapid Hit + One For All. Rapid Hit for stability and lightning reload, one trigger of OFA procs easily on this 4-burst and gives 35% damage.",
+          "masterwork": "range",
+          "barrel_options": [
+            "Arrowhead Brake",
+            "Smallbore",
+            "Chambered Compensator"
+          ],
+          "mag_options": [
+            "Flared Magwell",
+            "Tactical Mag",
+            "Appended Mag"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Rapid Hit",
+          "trait_2": "One For All"
+        },
+        {
+          "name": "PvP God Roll",
+          "description": "Rapid Hit + Kill Clip for dueling. Rapid Hit boosts stability, Kill Clip procs on kill for two-taps.",
+          "masterwork": "range",
+          "barrel_options": [
+            "Arrowhead Brake",
+            "Smallbore"
+          ],
+          "mag_options": [
+            "Accurized Rounds",
+            "Ricochet Rounds"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Rapid Hit",
+          "trait_2": "Kill Clip"
+        }
+      ]
+    },
+    "Apex Predator": {
+      "hash": 2710489255,
+      "source": "Last Wish",
+      "craftable": true,
+      "deepsight_required": 5,
+      "slot": "power",
+      "type": "Rocket Launcher",
+      "farming": "Farm Last Wish raid. Use Wish Wall to reach Shuro Chi checkpoint. Spoils from chests.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Reconstruction + Bait and Switch. Best rocket in the game for boss DPS. Reconstruction double-loads, B&S gives 35% damage. This is the meta DPS rocket.",
+          "masterwork": "blast radius",
+          "barrel_options": [
+            "Quick Launch",
+            "Hard Launch",
+            "Volatile Launch"
+          ],
+          "mag_options": [
+            "Alloy Casing",
+            "Impact Casing",
+            "High Velocity Rounds"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Reconstruction",
+          "trait_2": "Bait and Switch"
+        },
+        {
+          "name": "PvE Overflow Roll",
+          "description": "Overflow + Bait and Switch for double-shot without needing Reconstruction.",
+          "masterwork": "blast radius",
+          "barrel_options": [
+            "Quick Launch",
+            "Hard Launch"
+          ],
+          "mag_options": [
+            "Impact Casing",
+            "Alloy Casing"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Overflow",
+          "trait_2": "Bait and Switch"
+        }
+      ]
+    },
+    "Tyranny of Heaven": {
+      "hash": 1604847837,
+      "source": "Last Wish",
+      "craftable": true,
+      "deepsight_required": 5,
+      "slot": "energy",
+      "type": "Combat Bow",
+      "farming": "Farm Last Wish. Fastest to farm Morgeth encounter or open secret chests.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Archer's Tempo + Incandescent. Only legendary solar bow. Archer's Tempo for draw speed, Incandescent spreads scorch. Great for solar builds.",
+          "masterwork": "draw time",
+          "bowstring_options": [
+            "Elastic String",
+            "Tactile String"
+          ],
+          "arrow_options": [
+            "Fiberglass Arrow Shaft",
+            "Carbon Arrow Shaft",
+            "Straight Fletching"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Archer's Tempo",
+          "trait_2": "Incandescent"
+        },
+        {
+          "name": "PvE Dragonfly Roll",
+          "description": "Archer's Tempo + Dragonfly for kinetic-based explosions.",
+          "masterwork": "draw time",
+          "bowstring_options": [
+            "Elastic String",
+            "Tactile String"
+          ],
+          "arrow_options": [
+            "Fiberglass Arrow Shaft",
+            "Carbon Arrow Shaft"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Archer's Tempo",
+          "trait_2": "Dragonfly"
+        }
+      ]
+    },
+    "BxR-55 Battler": {
+      "hash": 2359022353,
+      "source": "Dares of Eternity",
+      "craftable": true,
+      "deepsight_required": 5,
+      "slot": "kinetic",
+      "type": "Pulse Rifle",
+      "farming": "Run Dares of Eternity on Legend rotation. Buy from Xur on weekends.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Demolitionist + Incandescent. The PvE workhorse. Demo for grenade energy, Incandescent for solar chains. Amazing synergy with solar builds.",
+          "masterwork": "range",
+          "barrel_options": [
+            "Arrowhead Brake",
+            "Smallbore",
+            "Full Bore"
+          ],
+          "mag_options": [
+            "Flared Magwell",
+            "Tactical Mag",
+            "Accurized Rounds"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Demolitionist",
+          "trait_2": "Incandescent"
+        },
+        {
+          "name": "PvP God Roll",
+          "description": "Perpetual Motion + Kill Clip. Very strong PvP pulse. PM gives stats on the move, Kill Clip enables two-bursts.",
+          "masterwork": "range",
+          "barrel_options": [
+            "Arrowhead Brake",
+            "Smallbore"
+          ],
+          "mag_options": [
+            "Accurized Rounds",
+            "Ricochet Rounds"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Perpetual Motion",
+          "trait_2": "Kill Clip"
+        }
+      ]
+    },
+    "Without Remorse": {
+      "hash": 2851881361,
+      "source": "Dares of Eternity",
+      "craftable": true,
+      "deepsight_required": 5,
+      "slot": "energy",
+      "type": "Shotgun",
+      "farming": "Dares of Eternity or Xur.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Craftable with Incandescent for solar add clear. Auto-loading for quick swap.",
+          "masterwork": "handling",
+          "barrel_options": [
+            "Barrel Shroud",
+            "Smallbore",
+            "Corkscrew Rifling"
+          ],
+          "mag_options": [
+            "Assault Mag",
+            "Tactical Mag",
+            "Accurized Rounds"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Auto-Loading Holster",
+          "trait_2": "Incandescent"
+        }
+      ]
+    },
+    "Riptide": {
+      "hash": 2594966931,
+      "source": "Crucible",
+      "craftable": true,
+      "deepsight_required": 5,
+      "slot": "power",
+      "type": "Fusion Rifle",
+      "farming": "Play Crucible matches. Focus at Shaxx. Best farm during double Crucible rep weeks.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Auto-Loading Holster + Chill Clip. The best champ-stunning special weapon in the game. Chill Clip procs slow/freeze, ALH means instant swap. Must-have for all endgame content.",
+          "masterwork": "charge time",
+          "barrel_options": [
+            "Arrowhead Brake",
+            "Smallbore",
+            "Fluted Barrel"
+          ],
+          "mag_options": [
+            "Ionized Battery",
+            "Enhanced Battery",
+            "Projection Fuse"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Auto-Loading Holster",
+          "trait_2": "Chill Clip"
+        }
+      ]
+    },
+    "Scatter Signal": {
+      "hash": 1243775334,
+      "source": "Season of the Wish",
+      "craftable": true,
+      "deepsight_required": 5,
+      "slot": "kinetic",
+      "type": "Fusion Rifle",
+      "farming": "Seasonal activity Riven's Lair / The Coil. Run weekly for red borders.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Overflow + Controlled Burst. Overflow gives massive mag, Controlled Burst gives 20% damage on sustained fire. Crazy DPS potential.",
+          "masterwork": "charge time",
+          "barrel_options": [
+            "Arrowhead Brake",
+            "Fluted Barrel",
+            "Smallbore"
+          ],
+          "mag_options": [
+            "Projection Fuse",
+            "Accelerated Coils",
+            "Enhanced Battery"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Overflow",
+          "trait_2": "Controlled Burst"
+        }
+      ]
+    },
+    "Lost Signal": {
+      "hash": 3198317892,
+      "source": "Season of the Wish",
+      "craftable": true,
+      "deepsight_required": 5,
+      "slot": "kinetic",
+      "type": "Grenade Launcher",
+      "farming": "Seasonal activity Riven's Lair / The Coil.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Auto-Loading Holster + Chill Clip. Like Riptide but in the kinetic slot and area-denial frame. Covers ground in stasis. Incredible utility for endgame.",
+          "masterwork": "velocity",
+          "barrel_options": [
+            "Quick Launch",
+            "Hard Launch",
+            "Volatile Launch"
+          ],
+          "mag_options": [
+            "High Velocity Rounds",
+            "Spike Grenades",
+            "Implosion Rounds"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Auto-Loading Holster",
+          "trait_2": "Chill Clip"
+        },
+        {
+          "name": "PvE Lead from Gold Roll",
+          "description": "Lead from Gold + Chill Clip for double-special builds where heavy ammo drops refill this.",
+          "masterwork": "velocity",
+          "barrel_options": [
+            "Quick Launch",
+            "Hard Launch"
+          ],
+          "mag_options": [
+            "High Velocity Rounds",
+            "Spike Grenades"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Lead from Gold",
+          "trait_2": "Chill Clip"
+        }
+      ]
+    },
+    "Multimach CCX": {
+      "hash": 1232670432,
+      "source": "Iron Banner",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "kinetic",
+      "type": "Submachine Gun",
+      "farming": "Play Iron Banner when available. Focus at Saladin.",
+      "rolls": [
+        {
+          "name": "PvP God Roll",
+          "description": "Dynamic Sway Reduction + Kill Clip / Tap the Trigger. One of the best kinetic SMGs for PvP. DSR tightens the cone, KC for 2-tap potential.",
+          "masterwork": "range",
+          "barrel_options": [
+            "Smallbore",
+            "Full Bore",
+            "Hammer Forged Rifling"
+          ],
+          "mag_options": [
+            "Accurized Rounds",
+            "Ricochet Rounds",
+            "Steady Rounds"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Dynamic Sway Reduction",
+          "trait_2": "Kill Clip"
+        },
+        {
+          "name": "PvP Model 8 Red",
+          "description": "Model 8 Red sight gives 15 zoom for superior range. DSR + Kill Clip.",
+          "masterwork": "range",
+          "barrel_options": [
+            "Model 8 Red"
+          ],
+          "mag_options": [
+            "Accurized Rounds",
+            "Ricochet Rounds"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Dynamic Sway Reduction",
+          "trait_2": "Kill Clip"
+        }
+      ]
+    },
+    "Pardon Our Dust": {
+      "hash": 1990933922,
+      "source": "Dares of Eternity",
+      "craftable": true,
+      "deepsight_required": 5,
+      "slot": "kinetic",
+      "type": "Grenade Launcher",
+      "farming": "Dares of Eternity or Xur.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Auto-Loading Holster + Vorpal / Blind. The best kinetic blinding GL. ALH for instant swap, blind for add control.",
+          "masterwork": "velocity",
+          "barrel_options": [
+            "Quick Launch",
+            "Hard Launch",
+            "Volatile Launch"
+          ],
+          "mag_options": [
+            "Spike Grenades",
+            "High Velocity Rounds",
+            "Implosion Rounds"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Auto-Loading Holster",
+          "trait_2": "Vorpal Weapon"
+        }
+      ]
+    },
+    "Wastelander M5": {
+      "hash": 2385699152,
+      "source": "Dares of Eternity",
+      "craftable": true,
+      "deepsight_required": 5,
+      "slot": "kinetic",
+      "type": "Shotgun",
+      "farming": "Dares of Eternity or Xur.",
+      "rolls": [
+        {
+          "name": "PvP God Roll",
+          "description": "Perpetual Motion + Opening Shot. Lightweight frame, great handling. PM for stats, OS for first shot accuracy.",
+          "masterwork": "handling",
+          "barrel_options": [
+            "Barrel Shroud",
+            "Smallbore",
+            "Corkscrew Rifling"
+          ],
+          "mag_options": [
+            "Assault Mag",
+            "Accurized Rounds",
+            "Light Mag"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Perpetual Motion",
+          "trait_2": "Opening Shot"
+        }
+      ]
+    },
+    "Nation of Beasts": {
+      "hash": 1252932488,
+      "source": "Last Wish",
+      "craftable": true,
+      "deepsight_required": 5,
+      "slot": "energy",
+      "type": "Hand Cannon",
+      "farming": "Farm Last Wish Morgeth encounter. Spoils from chests.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Dragonfly + Voltshot. Arc add-clear monster. Dragonfly explosions chain, Voltshot jolts nearby enemies on reload after kill. Synergises perfectly.",
+          "masterwork": "range",
+          "barrel_options": [
+            "Fluted Barrel",
+            "Smallbore",
+            "Corkscrew Rifling"
+          ],
+          "mag_options": [
+            "Accurized Rounds",
+            "Flared Magwell",
+            "Tactical Mag"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Dragonfly",
+          "trait_2": "Voltshot"
+        }
+      ]
+    },
+    "The Epicurean": {
+      "hash": 3734902486,
+      "source": "Presage / Crown of Sorrow",
+      "craftable": true,
+      "deepsight_required": 5,
+      "slot": "energy",
+      "type": "Fusion Rifle",
+      "farming": "Farm Presage mission. Crown of Sorrow vendor.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Feeding Frenzy + Reservoir Burst. Void wave clear fusion. Reservoir Burst on overloaded mag is insane for add clear.",
+          "masterwork": "charge time",
+          "barrel_options": [
+            "Arrowhead Brake",
+            "Smallbore",
+            "Fluted Barrel"
+          ],
+          "mag_options": [
+            "Extended Mag",
+            "Liquid Coils",
+            "Projection Fuse"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Feeding Frenzy",
+          "trait_2": "Reservoir Burst"
+        }
+      ]
+    },
+    "Fixed Odds": {
+      "hash": 1327807657,
+      "source": "Presage / Crown of Sorrow",
+      "craftable": true,
+      "deepsight_required": 5,
+      "slot": "power",
+      "type": "Machine Gun",
+      "farming": "Crown of Sorrow vendor. Presage mission.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Feeding Frenzy + Incandescent / Killing Tally. Solar MG with Incandescent for scorch chains or Killing Tally for stacking damage.",
+          "masterwork": "range",
+          "barrel_options": [
+            "Arrowhead Brake",
+            "Smallbore",
+            "Corkscrew Rifling"
+          ],
+          "mag_options": [
+            "Extended Mag",
+            "Appended Mag",
+            "Tactical Mag"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Feeding Frenzy",
+          "trait_2": "Incandescent"
+        }
+      ]
+    },
+    "Hollow Denial": {
+      "hash": 3630055896,
+      "source": "Presage / Crown of Sorrow",
+      "craftable": true,
+      "deepsight_required": 5,
+      "slot": "energy",
+      "type": "Trace Rifle",
+      "farming": "Presage mission / Crown of Sorrow.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Envious Assassin + Repulsor Brace. Void trace that constantly recharges with Envious and gives overshields with Repulsor on void debuffed kills.",
+          "masterwork": "stability",
+          "barrel_options": [
+            "Fluted Barrel",
+            "Smallbore",
+            "Corkscrew Rifling"
+          ],
+          "mag_options": [
+            "Enhanced Battery",
+            "Projection Fuse",
+            "Ionized Battery"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Envious Assassin",
+          "trait_2": "Repulsor Brace"
+        }
+      ]
+    },
+    "Luna's Howl": {
+      "hash": 721162578,
+      "source": "Competitive PvP",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "energy",
+      "type": "Hand Cannon",
+      "farming": "Play Competitive PvP. Focus engrams at Shaxx.",
+      "rolls": [
+        {
+          "name": "PvP God Roll",
+          "description": "Perfect Float + Opening Shot / Keep Away. Precision frame + damage perk synergy. Great for in-air accuracy and dueling.",
+          "masterwork": "range",
+          "barrel_options": [
+            "Hammer Forged Rifling",
+            "Smallbore",
+            "Fluted Barrel"
+          ],
+          "mag_options": [
+            "Accurized Rounds",
+            "Ricochet Rounds",
+            "Steady Rounds"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Perfect Float",
+          "trait_2": "Opening Shot"
+        }
+      ]
+    },
+    "Igneous Hammer": {
+      "hash": 2021004984,
+      "source": "Trials of Osiris",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "energy",
+      "type": "Hand Cannon",
+      "farming": "Play Trials of Osiris. Flawless cards. Focus at Saint-14.",
+      "rolls": [
+        {
+          "name": "PvP God Roll",
+          "description": "Keep Away + Eye of the Storm / Precision Instrument. The best 120 HC for PvP. Keep Away for range stats bonus, EotS for dueling.",
+          "masterwork": "range",
+          "barrel_options": [
+            "Hammer Forged Rifling",
+            "Smallbore",
+            "Fluted Barrel",
+            "Full Bore"
+          ],
+          "mag_options": [
+            "Accurized Rounds",
+            "Ricochet Rounds",
+            "Flared Magwell"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Keep Away",
+          "trait_2": "Eye of the Storm"
+        }
+      ]
+    },
+    "The Immortal": {
+      "hash": 3221352856,
+      "source": "Trials of Osiris",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "energy",
+      "type": "Submachine Gun",
+      "farming": "Play Trials of Osiris. Flawless cards. Focus at Saint-14.",
+      "rolls": [
+        {
+          "name": "PvP God Roll",
+          "description": "Dynamic Sway Reduction + Rangefinder / Target Lock. Currently the best 750 SMG in the game. DSR + Target Lock is oppressive.",
+          "masterwork": "range",
+          "barrel_options": [
+            "Hammer Forged Rifling",
+            "Smallbore",
+            "Full Bore"
+          ],
+          "mag_options": [
+            "Accurized Rounds",
+            "Ricochet Rounds",
+            "Light Mag"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Dynamic Sway Reduction",
+          "trait_2": "Target Lock"
+        }
+      ]
+    },
+    "The Summoner": {
+      "hash": 3185104844,
+      "source": "Trials of Osiris",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "energy",
+      "type": "Auto Rifle",
+      "farming": "Trials of Osiris. Flawless. Focus at Saint-14.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Subsistence + Adrenaline Junkie / Rampage for add clear.",
+          "masterwork": "range",
+          "barrel_options": [
+            "Smallbore",
+            "Corkscrew Rifling",
+            "Hammer Forged Rifling"
+          ],
+          "mag_options": [
+            "Tactical Mag",
+            "Flared Magwell",
+            "Appended Mag"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Subsistence",
+          "trait_2": "Rampage"
+        },
+        {
+          "name": "PvP God Roll",
+          "description": "Dynamic Sway Reduction + Rangefinder / Target Lock. Consistent 600 RPM dueling AR.",
+          "masterwork": "range",
+          "barrel_options": [
+            "Smallbore",
+            "Hammer Forged Rifling",
+            "Full Bore"
+          ],
+          "mag_options": [
+            "Accurized Rounds",
+            "Ricochet Rounds",
+            "Flared Magwell"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Dynamic Sway Reduction",
+          "trait_2": "Rangefinder"
+        }
+      ]
+    },
+    "Wendigo GL3": {
+      "hash": 2685127859,
+      "source": "Nightfall",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "power",
+      "type": "Grenade Launcher",
+      "farming": "Farm Nightfall Strikes when Wendigo is on rotation. Higher difficulties drop better rolls.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Auto-Loading Holster + Explosive Light. Top-tier heavy GL. ALH for quick swap, Explosive Light for 25% damage buff on orb pickup. Great for DPS phases.",
+          "masterwork": "blast radius",
+          "barrel_options": [
+            "Quick Launch",
+            "Hard Launch",
+            "Volatile Launch"
+          ],
+          "mag_options": [
+            "Spike Grenades",
+            "High Velocity Rounds",
+            "Implosion Rounds"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Auto-Loading Holster",
+          "trait_2": "Explosive Light"
+        },
+        {
+          "name": "PvE Cascade Point Roll",
+          "description": "Auto-Loading Holster + Cascade Point for faster follow-up shots.",
+          "masterwork": "blast radius",
+          "barrel_options": [
+            "Quick Launch",
+            "Hard Launch"
+          ],
+          "mag_options": [
+            "Spike Grenades",
+            "High Velocity Rounds"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Auto-Loading Holster",
+          "trait_2": "Cascade Point"
+        }
+      ]
+    },
+    "Koraxis's Distress": {
+      "hash": 1989010876,
+      "source": "Root of Nightmares",
+      "craftable": true,
+      "deepsight_required": 5,
+      "slot": "power",
+      "type": "Grenade Launcher",
+      "farming": "Farm Root of Nightmares raid. Spoils at final chest.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Envious Assassin + Explosive Light. Envious overflows mag massively, Explosive Light gives consistent damage. Good for burst DPS.",
+          "masterwork": "blast radius",
+          "barrel_options": [
+            "Quick Launch",
+            "Hard Launch",
+            "Volatile Launch"
+          ],
+          "mag_options": [
+            "Spike Grenades",
+            "High Velocity Rounds",
+            "Implosion Rounds"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Envious Assassin",
+          "trait_2": "Explosive Light"
+        },
+        {
+          "name": "PvE Bait and Switch Roll",
+          "description": "Envious Assassin + Bait and Switch for max DPS.",
+          "masterwork": "blast radius",
+          "barrel_options": [
+            "Quick Launch",
+            "Hard Launch"
+          ],
+          "mag_options": [
+            "Spike Grenades",
+            "High Velocity Rounds"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Envious Assassin",
+          "trait_2": "Bait and Switch"
+        }
+      ]
+    },
+    "Semiotician": {
+      "hash": 2717887958,
+      "source": "Vanguard / Nightfall",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "power",
+      "type": "Rocket Launcher",
+      "farming": "Vanguard playlist or Nightfalls.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Reconstruction + Explosive Light. Precision frame rocket with Recon for auto-loading and EL for damage. Solid DPS option.",
+          "masterwork": "blast radius",
+          "barrel_options": [
+            "Quick Launch",
+            "Hard Launch",
+            "Smart Drift Control"
+          ],
+          "mag_options": [
+            "Impact Casing",
+            "Alloy Casing",
+            "High Velocity Rounds"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Reconstruction",
+          "trait_2": "Explosive Light"
+        }
+      ]
+    },
+    "Taipan-4FR": {
+      "hash": 1823875472,
+      "source": "World Drop / Enclave",
+      "craftable": true,
+      "deepsight_required": 5,
+      "slot": "power",
+      "type": "Linear Fusion Rifle",
+      "farming": "Free from the Enclave on Mars quest. Farm world drops for red borders.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Triple Tap + Firing Line. Free-to-play god roll LFR. Triple Tap refunds on precision hits, Firing Line gives 25% damage near teammates. Amazing for beginners.",
+          "masterwork": "charge time",
+          "barrel_options": [
+            "Arrowhead Brake",
+            "Fluted Barrel",
+            "Chambered Compensator"
+          ],
+          "mag_options": [
+            "Enhanced Battery",
+            "Ionized Battery",
+            "Liquid Coils"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Triple Tap",
+          "trait_2": "Firing Line"
+        }
+      ]
+    },
+    "Touch of Malice": {
+      "hash": 3717248356,
+      "source": "King's Fall",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "kinetic",
+      "type": "Scout Rifle",
+      "farming": "Farm King's Fall raid final boss for Exotic drop chance. Once per week per character.",
+      "rolls": [
+        {
+          "name": "Exotic",
+          "description": "Exotic intrinsic. Last round in magazine consumes health to return ammo. Final round deals bonus damage. Pairs with Well of Radiance and other healing sources for infinite ammo DPS.",
+          "masterwork": "handling",
+          "barrel_options": [],
+          "mag_options": [],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "",
+          "trait_2": ""
+        }
+      ]
+    },
+    "Outbreak Perfected": {
+      "hash": 3099119902,
+      "source": "Zero Hour Exotic Mission",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "kinetic",
+      "type": "Pulse Rifle",
+      "farming": "Zero Hour exotic mission on rotation. Farm boss for catalyst completion.",
+      "rolls": [
+        {
+          "name": "Exotic",
+          "description": "Exotic intrinsic. Precision hits spawn SIVA nanites that attach to enemies. Multiple Outbreaks stack nanite damage. Top-tier DPS when multiple users. Also excellent for add clear.",
+          "masterwork": "handling",
+          "barrel_options": [],
+          "mag_options": [],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "",
+          "trait_2": ""
+        }
+      ]
+    },
+    "Witherhoard": {
+      "hash": 2074082956,
+      "source": "Monument to Lost Lights",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "kinetic",
+      "type": "Grenade Launcher",
+      "farming": "Buy from the Monument to Lost Lights at the Tower. Requires Exotic Cipher + materials.",
+      "rolls": [
+        {
+          "name": "Exotic",
+          "description": "Exotic intrinsic with Catalyst. Blight rounds leave a damage pool. Direct hits attach a blight that damages over time. Best-in-slot special weapon for all content. Pairs with Auto-Loading Holster (catayst). Use as primary DPS tag + swap.",
+          "masterwork": "handling",
+          "barrel_options": [],
+          "mag_options": [],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "",
+          "trait_2": ""
+        }
+      ]
+    },
+    "Izanagi's Burden": {
+      "hash": 1205795926,
+      "source": "Monument to Lost Lights",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "kinetic",
+      "type": "Sniper Rifle",
+      "farming": "Buy from Monument to Lost Lights.",
+      "rolls": [
+        {
+          "name": "Exotic",
+          "description": "Honed Edge x4 provides massive single-shot damage. Pairs with Wendigo or rocket for peak DPS combo. Catalyst gives reload boost.",
+          "masterwork": "handling",
+          "barrel_options": [],
+          "mag_options": [],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "",
+          "trait_2": ""
+        }
+      ]
+    },
+    "Divinity": {
+      "hash": 2297692361,
+      "source": "Vault of Glass / Monument",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "energy",
+      "type": "Trace Rifle",
+      "farming": "Buy from Monument to Lost Lights. Quest from the Lure.",
+      "rolls": [
+        {
+          "name": "Exotic",
+          "description": "Creates a large crit bubble on sustained fire. Debuffs target for 15% increased damage. REQUIRED for all endgame DPS. Every raid team wants one.",
+          "masterwork": "stability",
+          "barrel_options": [],
+          "mag_options": [],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "",
+          "trait_2": ""
+        }
+      ]
+    },
+    "Gjallarhorn": {
+      "hash": 3743032621,
+      "source": "Grasp of Avarice",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "power",
+      "type": "Rocket Launcher",
+      "farming": "Complete Grasp of Avarice dungeon on any character. Exotic quest from Shaw Han.",
+      "rolls": [
+        {
+          "name": "Exotic",
+          "description": "Exotic rockets have Wolfpack Rounds that track targets. Wolfpack Rounds buff OTHER players' rockets by 25-35%. One Gjally buffs an entire fireteam's rocket DPS. Essential for any rocket DPS meta.",
+          "masterwork": "blast radius",
+          "barrel_options": [],
+          "mag_options": [],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "",
+          "trait_2": ""
+        }
+      ]
+    },
+    "Parasite": {
+      "hash": 721203006,
+      "source": "Season of the Lost / Monument",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "power",
+      "type": "Grenade Launcher",
+      "farming": "Quest from Mara Sov. Buy from Monument if missed.",
+      "rolls": [
+        {
+          "name": "Exotic",
+          "description": "Worm's Hunger stacks damage per kill before firing. At max stacks (20), one-shots nearly anything. Great for burst damage phases.",
+          "masterwork": "blast radius",
+          "barrel_options": [],
+          "mag_options": [],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "",
+          "trait_2": ""
+        }
+      ]
+    },
+    "Xenophage": {
+      "hash": 3399818384,
+      "source": "Pit of Heresy",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "power",
+      "type": "Machine Gun",
+      "farming": "Quest from Pit of Heresy dungeon.",
+      "rolls": [
+        {
+          "name": "Exotic",
+          "description": "High-damage explosive rounds. No precision damage needed, hits hard. Excellent for easy DPS, anti-Champion, and destroying vehicles. Consistently good regardless of game updates.",
+          "masterwork": "range",
+          "barrel_options": [],
+          "mag_options": [],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "",
+          "trait_2": ""
+        }
+      ]
+    },
+    "Thunderlord": {
+      "hash": 1559636586,
+      "source": "World Drop / Monument",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "power",
+      "type": "Machine Gun",
+      "farming": "World drop Exotic. Buy from Monument to Lost Lights.",
+      "rolls": [
+        {
+          "name": "Exotic",
+          "description": "Sustained fire increases rate of fire and lightning strikes. Excellent add clear and solid DPS for a MG. Catalyst increases mag size.",
+          "masterwork": "range",
+          "barrel_options": [],
+          "mag_options": [],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "",
+          "trait_2": ""
+        }
+      ]
+    },
+    "The Other Half": {
+      "hash": 2071757251,
+      "source": "Dares of Eternity",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "energy",
+      "type": "Sword",
+      "farming": "Dares of Eternity. Focus treasure rooms.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Eager Edge + Vorpal. Eager Edge gives massive lunge on swap for movement tech. Vorpal for damage. Eager Edge is essential for speedrunning and movement.",
+          "masterwork": "impact",
+          "guard_options": [
+            "Tireless Blade",
+            "Relentless Strikes"
+          ],
+          "mag_options": [],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Eager Edge",
+          "trait_2": "Vorpal Weapon"
+        }
+      ]
+    },
+    "Half-Truths": {
+      "hash": 497970838,
+      "source": "Dares of Eternity",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "energy",
+      "type": "Sword",
+      "farming": "Dares of Eternity treasure rooms.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Eager Edge for movement. Pair with The Other Half for max sword coverage. Combo with energy transfer for utility.",
+          "masterwork": "impact",
+          "guard_options": [
+            "Tireless Blade",
+            "Relentless Strikes"
+          ],
+          "mag_options": [],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Eager Edge",
+          "trait_2": "Whirlwind Blade"
+        }
+      ]
+    },
+    "Crown-Splitter": {
+      "hash": 2766903707,
+      "source": "World Drop / Gunsmith",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "power",
+      "type": "Sword",
+      "farming": "Gunsmith rank-ups or world drops. Titan-only drop then craftable via collections.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Relentless Strikes + Whirlwind Blade. Classic sword DPS combo. Relentless for ammo economy, Whirlwind for stacking damage.",
+          "masterwork": "impact",
+          "guard_options": [
+            "Burst Guard",
+            "Enduring Guard"
+          ],
+          "mag_options": [],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Relentless Strikes",
+          "trait_2": "Whirlwind Blade"
+        }
+      ]
+    },
+    "Empty Vessel": {
+      "hash": 2002283833,
+      "source": "Vanguard",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "kinetic",
+      "type": "Grenade Launcher",
+      "farming": "Vanguard playlist. Focus at Commander Zavala.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Auto-Loading Holster + Vorpal / Blinding Grenades. Top-tier kinetic blinding GL. Blinding is essential for GMs.",
+          "masterwork": "velocity",
+          "barrel_options": [
+            "Quick Launch",
+            "Hard Launch",
+            "Volatile Launch"
+          ],
+          "mag_options": [
+            "Spike Grenades",
+            "High Velocity Rounds",
+            "Implosion Rounds"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Auto-Loading Holster",
+          "trait_2": "Vorpal Weapon"
+        }
+      ]
+    },
+    "Ignition Code": {
+      "hash": 4067553379,
+      "source": "Dares of Eternity",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "kinetic",
+      "type": "Grenade Launcher",
+      "farming": "Dares of Eternity / Xur.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Auto-Loading Holster + Vorpal / Blinding. Kinetic blinding GL alternative to Empty Vessel.",
+          "masterwork": "velocity",
+          "barrel_options": [
+            "Quick Launch",
+            "Hard Launch",
+            "Volatile Launch"
+          ],
+          "mag_options": [
+            "Spike Grenades",
+            "High Velocity Rounds",
+            "Blinding Grenades"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Auto-Loading Holster",
+          "trait_2": "Vorpal Weapon"
+        }
+      ]
+    },
+    "Rufus's Fury": {
+      "hash": 2001093523,
+      "source": "Root of Nightmares",
+      "craftable": true,
+      "deepsight_required": 5,
+      "slot": "kinetic",
+      "type": "Auto Rifle",
+      "farming": "Farm Root of Nightmares raid. Spoils at final chest.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Demolitionist + Hatchling / Target Lock. Strand auto with Demo for grenade energy, Hatchling for threadlings or Target Lock for bonus damage.",
+          "masterwork": "range",
+          "barrel_options": [
+            "Arrowhead Brake",
+            "Smallbore",
+            "Fluted Barrel"
+          ],
+          "mag_options": [
+            "Flared Magwell",
+            "Tactical Mag",
+            "Appended Mag"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Demolitionist",
+          "trait_2": "Hatchling"
+        },
+        {
+          "name": "PvE Rewind Rounds Roll",
+          "description": "Rewind Rounds + Hatchling for almost infinite mag via rewinding rounds.",
+          "masterwork": "range",
+          "barrel_options": [
+            "Arrowhead Brake",
+            "Smallbore"
+          ],
+          "mag_options": [
+            "Flared Magwell",
+            "Tactical Mag"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Rewind Rounds",
+          "trait_2": "Hatchling"
+        }
+      ]
+    },
+    "Conditional Finality": {
+      "hash": 2339081268,
+      "source": "Root of Nightmares",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "kinetic",
+      "type": "Shotgun",
+      "farming": "Root of Nightmares raid final boss. Once per week per character for exotic drop.",
+      "rolls": [
+        {
+          "name": "Exotic",
+          "description": "Dual-fire elemental shotgun. One shot freezes (Stasis), the next ignites (Solar). Best PvE special weapon for champ stunning. Also insane for PvP for the freeze capability. Best shotgun in the game.",
+          "masterwork": "handling",
+          "barrel_options": [],
+          "mag_options": [],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "",
+          "trait_2": ""
+        }
+      ]
+    },
+    "Final Warning": {
+      "hash": 3632058603,
+      "source": "Season Pass / Monument",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "kinetic",
+      "type": "Sidearm",
+      "farming": "Season pass reward or buy from Monument.",
+      "rolls": [
+        {
+          "name": "Exotic",
+          "description": "Lock-on targeting sidearm. Hip-fire locks onto targets, ADS fires all lock-on rounds at once. Devastating damage. Great for strand builds. Unmatched burst damage for a primary.",
+          "masterwork": "range",
+          "barrel_options": [],
+          "mag_options": [],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "",
+          "trait_2": ""
+        }
+      ]
+    },
+    "The Mountaintop": {
+      "hash": 3978548608,
+      "source": "Crucible / Monument",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "kinetic",
+      "type": "Grenade Launcher",
+      "farming": "Buy from Monument to Lost Lights.",
+      "rolls": [
+        {
+          "name": "Exotic",
+          "description": "Micro-missile frame. Fires straight with no arc. Great for burst damage. Micromissile intrinsic + Autoloading.",
+          "masterwork": "velocity",
+          "barrel_options": [],
+          "mag_options": [
+            "Spike Grenades",
+            "High Velocity Rounds"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Micro Missile Frame",
+          "trait_2": "Auto-Loading Holster"
+        }
+      ]
+    },
+    "Deliverance": {
+      "hash": 4257253300,
+      "source": "Vow of the Disciple",
+      "craftable": true,
+      "deepsight_required": 5,
+      "slot": "kinetic",
+      "type": "Fusion Rifle",
+      "farming": "Vow of the Disciple. Spoils at final chest.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Demolitionist + Chill Clip / Successful Warmup. Stasis fusion with Demo for grenade energy. Chill Clip for slow/freeze on every bolt.",
+          "masterwork": "charge time",
+          "barrel_options": [
+            "Arrowhead Brake",
+            "Fluted Barrel",
+            "Smallbore"
+          ],
+          "mag_options": [
+            "Projection Fuse",
+            "Ionized Battery",
+            "Enhanced Battery"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Demolitionist",
+          "trait_2": "Chill Clip"
+        }
+      ]
+    },
+    "Reckless Oracle": {
+      "hash": 3613105970,
+      "source": "Garden of Salvation",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "energy",
+      "type": "Auto Rifle",
+      "farming": "Garden of Salvation raid.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Rewind Rounds + One For All / Rampage. Rewind for nearly infinite mag, OFA for 35% damage buff.",
+          "masterwork": "range",
+          "barrel_options": [
+            "Arrowhead Brake",
+            "Smallbore",
+            "Corkscrew Rifling"
+          ],
+          "mag_options": [
+            "Flared Magwell",
+            "Tactical Mag",
+            "Appended Mag"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Rewind Rounds",
+          "trait_2": "One For All"
+        }
+      ]
+    },
+    "Prophet of Doom": {
+      "hash": 1355866740,
+      "source": "Garden of Salvation",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "kinetic",
+      "type": "Shotgun",
+      "farming": "Garden of Salvation Sanctified Mind encounter.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Auto-Loading Holster + One Two Punch / Vorpal. Precision slug with ALH for swap play, 1-2 Punch for melee builds.",
+          "masterwork": "handling",
+          "barrel_options": [
+            "Fluted Barrel",
+            "Smallbore",
+            "Barrel Shroud"
+          ],
+          "mag_options": [
+            "Assault Mag",
+            "Tactical Mag",
+            "Accurized Rounds"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Auto-Loading Holster",
+          "trait_2": "One-Two Punch"
+        }
+      ]
+    },
+    "Ancient Gospel": {
+      "hash": 3678158658,
+      "source": "Garden of Salvation",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "energy",
+      "type": "Hand Cannon",
+      "farming": "Garden of Salvation.",
+      "rolls": [
+        {
+          "name": "PvP God Roll",
+          "description": "Rapid Hit + Kill Clip / Rampage. Precision frame HC with great PvP perks. Rapid Hit for consistency, KC for two-taps.",
+          "masterwork": "range",
+          "barrel_options": [
+            "Hammer Forged Rifling",
+            "Smallbore",
+            "Full Bore"
+          ],
+          "mag_options": [
+            "Accurized Rounds",
+            "Ricochet Rounds",
+            "Flared Magwell"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Rapid Hit",
+          "trait_2": "Kill Clip"
+        }
+      ]
+    },
+    "Seventh Seraph CQC-12": {
+      "hash": 3524969238,
+      "source": "World Drop / Gunsmith",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "energy",
+      "type": "Shotgun",
+      "farming": "World drops or Banshee-44 rank-ups.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Auto-Loading Holster + Vorpal / One Two Punch. Lightweight frame shotgun. ALH for swap play.",
+          "masterwork": "handling",
+          "barrel_options": [
+            "Barrel Shroud",
+            "Smallbore",
+            "Corkscrew Rifling"
+          ],
+          "mag_options": [
+            "Assault Mag",
+            "Tactical Mag",
+            "Light Mag"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Auto-Loading Holster",
+          "trait_2": "Vorpal Weapon"
+        },
+        {
+          "name": "PvP God Roll",
+          "description": "Quickdraw + Snapshot Sights for instant swap and ADS.",
+          "masterwork": "handling",
+          "barrel_options": [
+            "Barrel Shroud",
+            "Smallbore"
+          ],
+          "mag_options": [
+            "Assault Mag",
+            "Accurized Rounds"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Quickdraw",
+          "trait_2": "Snapshot Sights"
+        }
+      ]
+    },
+    "Seventh Seraph SI-2": {
+      "hash": 3054594816,
+      "source": "World Drop / Gunsmith",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "energy",
+      "type": "Sidearm",
+      "farming": "World drops / Banshee-44.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Feeding Frenzy + Vorpal / Swashbuckler. Good sidearm with Warmind cell capability (legacy).",
+          "masterwork": "range",
+          "barrel_options": [
+            "Hammer Forged Rifling",
+            "Smallbore",
+            "Full Bore"
+          ],
+          "mag_options": [
+            "Accurized Rounds",
+            "Tactical Mag",
+            "Flared Magwell"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Feeding Frenzy",
+          "trait_2": "Vorpal Weapon"
+        }
+      ]
+    },
+    "Funnelweb": {
+      "hash": 3488067703,
+      "source": "World Drop",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "energy",
+      "type": "Submachine Gun",
+      "farming": "World drops. Banshee-44 rank-ups. Ghoul activity during Season of Plunder.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Subsistence + Frenzy. The legendary void SMG. Subsistence auto-reloads on kill, Frenzy gives 15% damage + handling/reload on sustained combat. Best-in-class for void builds.",
+          "masterwork": "range",
+          "barrel_options": [
+            "Smallbore",
+            "Hammer Forged Rifling",
+            "Corkscrew Rifling"
+          ],
+          "mag_options": [
+            "Appended Mag",
+            "Tactical Mag",
+            "Flared Magwell"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Subsistence",
+          "trait_2": "Frenzy"
+        },
+        {
+          "name": "PvE ADEPT Roll",
+          "description": "Subsistence + Adrenaline Junkie for grenade builds.",
+          "masterwork": "range",
+          "barrel_options": [
+            "Smallbore",
+            "Hammer Forged"
+          ],
+          "mag_options": [
+            "Appended Mag",
+            "Tactical Mag"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Subsistence",
+          "trait_2": "Adrenaline Junkie"
+        }
+      ]
+    },
+    "Seventh Seraph VY-7": {
+      "hash": 2917221068,
+      "source": "World Drop",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "energy",
+      "type": "Submachine Gun",
+      "farming": "World drops.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Subsistence + Dragonfly / Rampage. Void SMG. Subsistence + Dragonfly for explosive add clear.",
+          "masterwork": "range",
+          "barrel_options": [
+            "Smallbore",
+            "Corkscrew Rifling",
+            "Hammer Forged Rifling"
+          ],
+          "mag_options": [
+            "Appended Mag",
+            "Tactical Mag",
+            "Accurized Rounds"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Subsistence",
+          "trait_2": "Dragonfly"
+        }
+      ]
+    },
+    "Palindrome": {
+      "hash": 3175118685,
+      "source": "Nightfall",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "energy",
+      "type": "Hand Cannon",
+      "farming": "Nightfall Strikes on rotation weeks. Higher difficulty = better drop rate.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Overflow + One For All. Overflow for massive mag, OFA for 35% damage. Great for GMs where you want range + damage.",
+          "masterwork": "range",
+          "barrel_options": [
+            "Smallbore",
+            "Hammer Forged Rifling",
+            "Corkscrew Rifling"
+          ],
+          "mag_options": [
+            "Accurized Rounds",
+            "Tactical Mag",
+            "Flared Magwell"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Overflow",
+          "trait_2": "One For All"
+        },
+        {
+          "name": "PvP God Roll",
+          "description": "Quickdraw + Rangefinder. Classic PvP 140 HC. Quickdraw for ready speed, Rangefinder for range.",
+          "masterwork": "range",
+          "barrel_options": [
+            "Hammer Forged Rifling",
+            "Smallbore",
+            "Full Bore"
+          ],
+          "mag_options": [
+            "Accurized Rounds",
+            "Ricochet Rounds"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Quickdraw",
+          "trait_2": "Rangefinder"
+        }
+      ]
+    },
+    "Hung Jury SR4": {
+      "hash": 4281681415,
+      "source": "Nightfall",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "kinetic",
+      "type": "Scout Rifle",
+      "farming": "Nightfall Strikes on rotation.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Rapid Hit + Precision Instrument / Explosive Payload. Classic primary scout. Rapid Hit for stability and reload, PI for precision damage or EP for flat bonus.",
+          "masterwork": "range",
+          "barrel_options": [
+            "Fluted Barrel",
+            "Smallbore",
+            "Arrowhead Brake"
+          ],
+          "mag_options": [
+            "Flared Magwell",
+            "Tactical Mag",
+            "Accurized Rounds"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Rapid Hit",
+          "trait_2": "Precision Instrument"
+        },
+        {
+          "name": "PvE GM Roll",
+          "description": "Shoot to Loot + One For All for ammo and damage in GMs.",
+          "masterwork": "range",
+          "barrel_options": [
+            "Fluted Barrel",
+            "Smallbore"
+          ],
+          "mag_options": [
+            "Flared Magwell",
+            "Tactical Mag"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Shoot to Loot",
+          "trait_2": "One For All"
+        }
+      ]
+    },
+    "The Hothead": {
+      "hash": 1730085442,
+      "source": "Nightfall",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "power",
+      "type": "Rocket Launcher",
+      "farming": "Nightfall Strikes on rotation. Grandmaster for Adept version.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Auto-Loading Holster + Explosive Light / Vorpal. Excellent rocket for DPS. ALH is essential for rocket rotations.",
+          "masterwork": "blast radius",
+          "barrel_options": [
+            "Quick Launch",
+            "Hard Launch",
+            "Volatile Launch"
+          ],
+          "mag_options": [
+            "Impact Casing",
+            "Alloy Casing",
+            "High Velocity Rounds"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Auto-Loading Holster",
+          "trait_2": "Explosive Light"
+        },
+        {
+          "name": "PvE Adept Roll",
+          "description": "Tracking Module + Explosive Light for consistency with tracking.",
+          "masterwork": "blast radius",
+          "barrel_options": [
+            "Quick Launch",
+            "Hard Launch"
+          ],
+          "mag_options": [
+            "Impact Casing",
+            "Alloy Casing"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Tracking Module",
+          "trait_2": "Explosive Light"
+        }
+      ]
+    },
+    "The Swarm": {
+      "hash": 2961162477,
+      "source": "Nightfall",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "power",
+      "type": "Machine Gun",
+      "farming": "Nightfall Strikes on rotation.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Subsistence + Vorpal / Surrounded. Void MG with Subsistence for ammo and Vorpal for boss damage.",
+          "masterwork": "range",
+          "barrel_options": [
+            "Arrowhead Brake",
+            "Smallbore",
+            "Corkscrew Rifling"
+          ],
+          "mag_options": [
+            "Extended Mag",
+            "Appended Mag",
+            "Tactical Mag"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Subsistence",
+          "trait_2": "Vorpal Weapon"
+        }
+      ]
+    },
+    "Compass Rose": {
+      "hash": 3756563376,
+      "source": "Trials of Osiris",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "energy",
+      "type": "Shotgun",
+      "farming": "Trials of Osiris.",
+      "rolls": [
+        {
+          "name": "PvP God Roll",
+          "description": "Opening Shot + Vorpal / Killing Wind. Precision frame PvP shotgun. OS for first shot accuracy.",
+          "masterwork": "handling",
+          "barrel_options": [
+            "Barrel Shroud",
+            "Smallbore",
+            "Corkscrew Rifling"
+          ],
+          "mag_options": [
+            "Assault Mag",
+            "Accurized Rounds",
+            "Light Mag"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Opening Shot",
+          "trait_2": "Vorpal Weapon"
+        }
+      ]
+    },
+    "Aisha's Embrace": {
+      "hash": 3919526123,
+      "source": "Trials of Osiris",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "energy",
+      "type": "Scout Rifle",
+      "farming": "Trials of Osiris.",
+      "rolls": [
+        {
+          "name": "PvP God Roll",
+          "description": "No Distractions + Box Breathing. Rapid-fire scout with Box Breathing for 3-tap potential. Great for long range Trials maps.",
+          "masterwork": "range",
+          "barrel_options": [
+            "Fluted Barrel",
+            "Arrowhead Brake",
+            "Smallbore"
+          ],
+          "mag_options": [
+            "Accurized Rounds",
+            "Ricochet Rounds",
+            "Steady Rounds"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "No Distractions",
+          "trait_2": "Box Breathing"
+        },
+        {
+          "name": "PvE Roll",
+          "description": "Rapid Hit + One For All for GMs.",
+          "masterwork": "range",
+          "barrel_options": [
+            "Fluted Barrel",
+            "Arrowhead Brake"
+          ],
+          "mag_options": [
+            "Tactical Mag",
+            "Appended Mag"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Rapid Hit",
+          "trait_2": "One For All"
+        }
+      ]
+    },
+    "Reed's Regret": {
+      "hash": 2696035767,
+      "source": "Trials of Osiris",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "power",
+      "type": "Linear Fusion Rifle",
+      "farming": "Trials of Osiris. Flawless or Saint-14 focusing.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Triple Tap + Firing Line. Stasis LFR. TT for ammo refund, Firing Line for 25% damage with teammates.",
+          "masterwork": "charge time",
+          "barrel_options": [
+            "Arrowhead Brake",
+            "Fluted Barrel",
+            "Chambered Compensator"
+          ],
+          "mag_options": [
+            "Enhanced Battery",
+            "Ionized Battery",
+            "Liquid Coils"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Triple Tap",
+          "trait_2": "Firing Line"
+        }
+      ]
+    },
+    "Bump in the Night": {
+      "hash": 2687148795,
+      "source": "Season of the Haunted / Crown of Sorrow",
+      "craftable": true,
+      "deepsight_required": 5,
+      "slot": "power",
+      "type": "Rocket Launcher",
+      "farming": "Crown of Sorrow vendor.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Auto-Loading Holster + Chill Clip / Explosive Light. Stasis rocket. ALH for swap, Chill Clip procs slow/freeze in AoE, or EL for damage.",
+          "masterwork": "blast radius",
+          "barrel_options": [
+            "Quick Launch",
+            "Hard Launch",
+            "Volatile Launch"
+          ],
+          "mag_options": [
+            "Impact Casing",
+            "Alloy Casing",
+            "High Velocity Rounds"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Auto-Loading Holster",
+          "trait_2": "Chill Clip"
+        }
+      ]
+    },
+    "Tarnished Mettle": {
+      "hash": 1319304067,
+      "source": "Season of the Plunder / Star Chart",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "energy",
+      "type": "Scout Rifle",
+      "farming": "Seasonal activities / Star Chart focusing.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Rapid Hit + Voltshot. Arc scout with Voltshot for insane add-clear chain damage. Rapid Hit keeps it snappy.",
+          "masterwork": "range",
+          "barrel_options": [
+            "Fluted Barrel",
+            "Arrowhead Brake",
+            "Smallbore"
+          ],
+          "mag_options": [
+            "Flared Magwell",
+            "Tactical Mag",
+            "Appended Mag"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Rapid Hit",
+          "trait_2": "Voltshot"
+        }
+      ]
+    },
+    "Submission": {
+      "hash": 3056070274,
+      "source": "Vow of the Disciple",
+      "craftable": true,
+      "deepsight_required": 5,
+      "slot": "kinetic",
+      "type": "Submachine Gun",
+      "farming": "Vow of the Disciple raid. Spoils at final chest.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Overflow + Frenzy. Kinetic SMG with Overflow for massive mag, Frenzy for consistent 15% damage + handling/reload.",
+          "masterwork": "range",
+          "barrel_options": [
+            "Fluted Barrel",
+            "Smallbore",
+            "Corkscrew Rifling"
+          ],
+          "mag_options": [
+            "Appended Mag",
+            "Tactical Mag",
+            "Flared Magwell"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Overflow",
+          "trait_2": "Frenzy"
+        }
+      ]
+    },
+    "Lubrae's Ruin": {
+      "hash": 2651628155,
+      "source": "Vow of the Disciple",
+      "craftable": true,
+      "deepsight_required": 5,
+      "slot": "kinetic",
+      "type": "Glaive",
+      "farming": "Vow of the Disciple.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Impulse Amplifier + Vorpal / Unstoppable Force. Solar glaive. Impulse for projectile speed, Vorpal for boss damage.",
+          "masterwork": "shield duration",
+          "barrel_options": [
+            "Fluted Barrel",
+            "Smallbore"
+          ],
+          "mag_options": [
+            "Appended Mag",
+            "Tactical Mag"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Impulse Amplifier",
+          "trait_2": "Vorpal Weapon"
+        }
+      ]
+    },
+    "Enigma": {
+      "hash": 938224794,
+      "source": "Enclave / Quest Reward",
+      "craftable": true,
+      "deepsight_required": 5,
+      "slot": "kinetic",
+      "type": "Glaive",
+      "farming": "Free from The Witch Queen campaign. Shape at the Enclave.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Impulse Amplifier + Unstoppable Force. Void glaive. Impulse for projectile speed, Unstoppable for bonus damage after shield drain.",
+          "masterwork": "shield duration",
+          "barrel_options": [
+            "Fluted Barrel",
+            "Smallbore"
+          ],
+          "mag_options": [
+            "Appended Mag",
+            "Tactical Mag"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Impulse Amplifier",
+          "trait_2": "Unstoppable Force"
+        }
+      ]
+    },
+    "Palmyra-B": {
+      "hash": 1713158056,
+      "source": "World Drop / Gunsmith",
+      "craftable": true,
+      "deepsight_required": 5,
+      "slot": "power",
+      "type": "Rocket Launcher",
+      "farming": "World drops. Banshee-44 rank-ups.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Auto-Loading Holster + Explosive Light. Precision frame rocket. ALH for swap DPS, EL for damage. Craftable makes it easy to get the perfect roll.",
+          "masterwork": "blast radius",
+          "barrel_options": [
+            "Quick Launch",
+            "Hard Launch",
+            "Volatile Launch"
+          ],
+          "mag_options": [
+            "Impact Casing",
+            "Alloy Casing",
+            "High Velocity Rounds"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Auto-Loading Holster",
+          "trait_2": "Explosive Light"
+        }
+      ]
+    },
+    "Thoughtless": {
+      "hash": 2199599292,
+      "source": "World Drop / Gunsmith",
+      "craftable": true,
+      "deepsight_required": 5,
+      "slot": "kinetic",
+      "type": "Sniper Rifle",
+      "farming": "World drops / Banshee-44.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Triple Tap + Firing Line. Kinetic sniper. TT for ammo, FL for team damage. Solid option.",
+          "masterwork": "handling",
+          "barrel_options": [
+            "Fluted Barrel",
+            "Arrowhead Brake",
+            "Smallbore"
+          ],
+          "mag_options": [
+            "Appended Mag",
+            "Tactical Mag",
+            "Extended Mag"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Triple Tap",
+          "trait_2": "Firing Line"
+        }
+      ]
+    },
+    "Perses-D": {
+      "hash": 1476902712,
+      "source": "World Drop / Gunsmith",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "kinetic",
+      "type": "Scout Rifle",
+      "farming": "World drops / Banshee-44.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Rapid Hit + Explosive Payload / Frenzy. Kinetic scout. Rapid Hit for consistency, EP for range damage or Frenzy for combat buff.",
+          "masterwork": "range",
+          "barrel_options": [
+            "Fluted Barrel",
+            "Arrowhead Brake",
+            "Smallbore"
+          ],
+          "mag_options": [
+            "Flared Magwell",
+            "Tactical Mag",
+            "Accurized Rounds"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Rapid Hit",
+          "trait_2": "Explosive Payload"
+        }
+      ]
+    },
+    "Retraced Path": {
+      "hash": 1165617572,
+      "source": "Dares of Eternity / Xur",
+      "craftable": true,
+      "deepsight_required": 5,
+      "slot": "energy",
+      "type": "Trace Rifle",
+      "farming": "Dares of Eternity. Xur weekends.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Incandescent + Killing Tally / Golden Tricorn. Solar trace rifle. Incandescent for scorch chains, KT for damage stacking or GT for ability damage boost.",
+          "masterwork": "stability",
+          "barrel_options": [
+            "Fluted Barrel",
+            "Smallbore",
+            "Corkscrew Rifling"
+          ],
+          "mag_options": [
+            "Enhanced Battery",
+            "Projection Fuse",
+            "Ionized Battery"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Incandescent",
+          "trait_2": "Killing Tally"
+        }
+      ]
+    },
+    "The Last Breath": {
+      "hash": 1704587860,
+      "source": "Prophecy Dungeon",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "kinetic",
+      "type": "Auto Rifle",
+      "farming": "Prophecy dungeon final boss. Weekly farmable.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Demolitionist + One For All / Frenzy. Kinetic auto with Demo for grenade builds and OFA for easy 35% damage.",
+          "masterwork": "range",
+          "barrel_options": [
+            "Arrowhead Brake",
+            "Smallbore",
+            "Fluted Barrel"
+          ],
+          "mag_options": [
+            "Flared Magwell",
+            "Tactical Mag",
+            "Appended Mag"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Demolitionist",
+          "trait_2": "One For All"
+        }
+      ]
+    },
+    "Darkest Before": {
+      "hash": 3747870929,
+      "source": "Prophecy Dungeon",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "energy",
+      "type": "Pulse Rifle",
+      "farming": "Prophecy dungeon final boss.",
+      "rolls": [
+        {
+          "name": "PvP God Roll",
+          "description": "Rapid Hit + Kill Clip / Headseeker. Rapid-fire pulse with great dueling potential. Rapid Hit for stability, KC for damage.",
+          "masterwork": "range",
+          "barrel_options": [
+            "Arrowhead Brake",
+            "Smallbore",
+            "Full Bore"
+          ],
+          "mag_options": [
+            "Accurized Rounds",
+            "Ricochet Rounds",
+            "Steady Rounds"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Rapid Hit",
+          "trait_2": "Kill Clip"
+        }
+      ]
+    },
+    "Judgment of Kelgorath": {
+      "hash": 2319785339,
+      "source": "Season of the Seraph / Bunker",
+      "craftable": true,
+      "deepsight_required": 5,
+      "slot": "energy",
+      "type": "Glaive",
+      "farming": "Seasonal activities on rotation.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Overflow + Incandescent. Solar glaive with Overflow for massive ammo and Incandescent for scorch on kill.",
+          "masterwork": "shield duration",
+          "barrel_options": [
+            "Fluted Barrel",
+            "Smallbore"
+          ],
+          "mag_options": [
+            "Appended Mag",
+            "Tactical Mag"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Overflow",
+          "trait_2": "Incandescent"
+        }
+      ]
+    },
+    "Firefright": {
+      "hash": 899417322,
+      "source": "Season of the Haunted",
+      "craftable": true,
+      "deepsight_required": 5,
+      "slot": "kinetic",
+      "type": "Auto Rifle",
+      "farming": "Seasonal content / Crown of Sorrow.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Stats for All + One for All / Adrenaline Junkie. Kinetic auto with SFA for stats and OFA for damage. Great general use.",
+          "masterwork": "range",
+          "barrel_options": [
+            "Arrowhead Brake",
+            "Smallbore",
+            "Corkscrew Rifling"
+          ],
+          "mag_options": [
+            "Flared Magwell",
+            "Tactical Mag",
+            "Appended Mag"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Stats for All",
+          "trait_2": "One For All"
+        }
+      ]
+    },
+    "Blowout": {
+      "hash": 1575578272,
+      "source": "Crucible",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "power",
+      "type": "Rocket Launcher",
+      "farming": "Crucible engrams at Shaxx.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Auto-Loading Holster + Explosive Light / Vorpal. High-impact rocket for Crucible and PvE. ALH + EL is standard.",
+          "masterwork": "blast radius",
+          "barrel_options": [
+            "Quick Launch",
+            "Hard Launch",
+            "Volatile Launch"
+          ],
+          "mag_options": [
+            "Impact Casing",
+            "Alloy Casing",
+            "High Velocity Rounds"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Auto-Loading Holster",
+          "trait_2": "Explosive Light"
+        }
+      ]
+    },
+    "Strident Whistle": {
+      "hash": 1264479361,
+      "source": "Vanguard / Strikes",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "energy",
+      "type": "Combat Bow",
+      "farming": "Vanguard playlist. Focus at Zavala.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Archer's Tempo + Incandescent. Solar bow with Incandescent for scorch on every kill. Archer's Tempo keeps draw speed fast.",
+          "masterwork": "draw time",
+          "bowstring_options": [
+            "Elastic String",
+            "Tactile String",
+            "Polymer String"
+          ],
+          "arrow_options": [
+            "Fiberglass Arrow Shaft",
+            "Carbon Arrow Shaft",
+            "Straight Fletching"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Archer's Tempo",
+          "trait_2": "Incandescent"
+        },
+        {
+          "name": "PvE Explosive Head Roll",
+          "description": "Archer's Tempo + Explosive Head for consistent AoE damage.",
+          "masterwork": "draw time",
+          "bowstring_options": [
+            "Elastic String",
+            "Tactile String"
+          ],
+          "arrow_options": [
+            "Fiberglass Arrow Shaft",
+            "Carbon Arrow Shaft"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Archer's Tempo",
+          "trait_2": "Explosive Head"
+        }
+      ]
+    },
+    "Ros Arago IV": {
+      "hash": 3873216968,
+      "source": "World Drop / Neomuna",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "kinetic",
+      "type": "Auto Rifle",
+      "farming": "Neomuna activities or world drops.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Demolitionist + Onslaught / Target Lock. High-impact kinetic auto. Demo for grenade builds, Onslaught for ramping fire rate.",
+          "masterwork": "range",
+          "barrel_options": [
+            "Arrowhead Brake",
+            "Smallbore",
+            "Corkscrew Rifling"
+          ],
+          "mag_options": [
+            "Flared Magwell",
+            "Tactical Mag",
+            "Appended Mag"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Demolitionist",
+          "trait_2": "Onslaught"
+        }
+      ]
+    },
+    "Senuna SI6": {
+      "hash": 885718754,
+      "source": "World Drop",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "energy",
+      "type": "Sidearm",
+      "farming": "World drops.",
+      "rolls": [
+        {
+          "name": "PvP God Roll",
+          "description": "Moving Target + Rangefinder / Kill Clip. Rapid-fire sidearm. Great for close range PvP.",
+          "masterwork": "range",
+          "barrel_options": [
+            "Hammer Forged Rifling",
+            "Smallbore",
+            "Full Bore"
+          ],
+          "mag_options": [
+            "Accurized Rounds",
+            "Ricochet Rounds",
+            "Tactical Mag"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Moving Target",
+          "trait_2": "Rangefinder"
+        }
+      ]
+    },
+    "Eremite": {
+      "hash": 2170282046,
+      "source": "Season of the Deep / Fishing",
+      "craftable": true,
+      "deepsight_required": 5,
+      "slot": "energy",
+      "type": "Fusion Rifle",
+      "farming": "Seasonal activities / HELM vendor.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Envious Assassin + Controlled Burst / Reservoir Burst. High-impact solar fusion. Envious for overflow, Controlled Burst for 20% damage.",
+          "masterwork": "charge time",
+          "barrel_options": [
+            "Arrowhead Brake",
+            "Fluted Barrel",
+            "Smallbore"
+          ],
+          "mag_options": [
+            "Projection Fuse",
+            "Liquid Coils",
+            "Enhanced Battery"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Envious Assassin",
+          "trait_2": "Controlled Burst"
+        }
+      ]
+    },
+    "Until Its Return": {
+      "hash": 3018060747,
+      "source": "Season of the Deep / Fishing",
+      "craftable": true,
+      "deepsight_required": 5,
+      "slot": "kinetic",
+      "type": "Shotgun",
+      "farming": "Seasonal / HELM vendor.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Auto-Loading Holster + Vorpal / Trench Barrel. Kinetic aggressive shotgun. ALH for swap play, Trench Barrel or Vorpal for damage.",
+          "masterwork": "handling",
+          "barrel_options": [
+            "Barrel Shroud",
+            "Smallbore",
+            "Corkscrew Rifling"
+          ],
+          "mag_options": [
+            "Assault Mag",
+            "Tactical Mag",
+            "Accurized Rounds"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Auto-Loading Holster",
+          "trait_2": "Vorpal Weapon"
+        }
+      ]
+    },
+    "Brya's Love": {
+      "hash": 4091967080,
+      "source": "Spire of the Watcher",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "energy",
+      "type": "Scout Rifle",
+      "farming": "Spire of the Watcher dungeon.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Rewind Rounds + Vorpal / Precision Instrument. Arc scout with Rewind for extended ammo and Vorpal for anti-champion.",
+          "masterwork": "range",
+          "barrel_options": [
+            "Fluted Barrel",
+            "Arrowhead Brake",
+            "Smallbore"
+          ],
+          "mag_options": [
+            "Accurized Rounds",
+            "Flared Magwell",
+            "Tactical Mag"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Rewind Rounds",
+          "trait_2": "Vorpal Weapon"
+        }
+      ]
+    },
+    "Seventh Seraph Carbine": {
+      "hash": 1789641332,
+      "source": "World Drop / Banshee",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "kinetic",
+      "type": "Auto Rifle",
+      "farming": "World drops / Banshee-44.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Feeding Frenzy + Vorpal / Rampage. Kinetic auto with FF for reload and Vorpal for anti-champion or Rampage for add clear.",
+          "masterwork": "range",
+          "barrel_options": [
+            "Smallbore",
+            "Corkscrew Rifling",
+            "Hammer Forged Rifling"
+          ],
+          "mag_options": [
+            "Appended Mag",
+            "Tactical Mag",
+            "Flared Magwell"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Feeding Frenzy",
+          "trait_2": "Vorpal Weapon"
+        }
+      ]
+    },
+    "Adhorative": {
+      "hash": 1535510169,
+      "source": "Neomuna / Nimbus",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "energy",
+      "type": "Pulse Rifle",
+      "farming": "Neomuna patrols / Nimbus rank-ups.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Rapid Hit + One For All / Frenzy. Lightweight void pulse. Rapid Hit for consistency, OFA for 35% damage.",
+          "masterwork": "range",
+          "barrel_options": [
+            "Arrowhead Brake",
+            "Smallbore",
+            "Fluted Barrel"
+          ],
+          "mag_options": [
+            "Flared Magwell",
+            "Tactical Mag",
+            "Appended Mag"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Rapid Hit",
+          "trait_2": "One For All"
+        }
+      ]
+    },
+    "Volta Bracket": {
+      "hash": 3242731339,
+      "source": "Neomuna / Nimbus",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "energy",
+      "type": "Hand Cannon",
+      "farming": "Neomuna / Nimbus rank-ups.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Voltshot + Stats for All. Arc precision HC. Voltshot for jolt chain damage.",
+          "masterwork": "range",
+          "barrel_options": [
+            "Fluted Barrel",
+            "Smallbore",
+            "Corkscrew Rifling"
+          ],
+          "mag_options": [
+            "Flared Magwell",
+            "Tactical Mag",
+            "Accurized Rounds"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Stats for All",
+          "trait_2": "Voltshot"
+        }
+      ]
+    },
+    "Salvager's Salvo": {
+      "hash": 1556141559,
+      "source": "Monument to Lost Lights",
+      "craftable": false,
+      "deepsight_required": 0,
+      "slot": "energy",
+      "type": "Grenade Launcher",
+      "farming": "Buy from Monument to Lost Lights.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Ambitious Assassin + Chain Reaction. Fixed roll. Best-in-slot arc add-clear GL. Ambitious for massive overflow, Chain Reaction for chain explosions.",
+          "masterwork": "velocity",
+          "barrel_options": [
+            "Quick Launch",
+            "Hard Launch",
+            "Volatile Launch"
+          ],
+          "mag_options": [
+            "Spike Grenades",
+            "High Velocity Rounds",
+            "Implosion Rounds"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Ambitious Assassin",
+          "trait_2": "Chain Reaction"
+        }
+      ]
+    },
+    "Cry Mutiny": {
+      "hash": 434869145,
+      "source": "Season of the Plunder / Star Chart",
+      "craftable": true,
+      "deepsight_required": 5,
+      "slot": "power",
+      "type": "Grenade Launcher",
+      "farming": "Seasonal activity / Star Chart.",
+      "rolls": [
+        {
+          "name": "PvE God Roll",
+          "description": "Auto-Loading Holster + Explosive Light. Solar heavy GL. ALH for swap, EL for damage.",
+          "masterwork": "blast radius",
+          "barrel_options": [
+            "Quick Launch",
+            "Hard Launch",
+            "Volatile Launch"
+          ],
+          "mag_options": [
+            "Spike Grenades",
+            "High Velocity Rounds",
+            "Implosion Rounds"
+          ],
+          "barrel": "",
+          "mag": "",
+          "trait_1": "Auto-Loading Holster",
+          "trait_2": "Explosive Light"
+        }
+      ]
+    }
+  }
+}
