@@ -179,19 +179,59 @@ class ManifestCache:
         if progress_callback:
             progress_callback(0.7, "Decompressing manifest database…")
 
-        # 3. Decompress
-        try:
-            with gzip.open(DB_GZ_PATH, "rb") as f_in:
-                with open(DB_PATH, "wb") as f_out:
-                    while True:
-                        chunk = f_in.read(1024 * 1024)  # 1 MiB
-                        if not chunk:
-                            break
-                        f_out.write(chunk)
-        except OSError as exc:
-            raise ManifestDownloadError(
-                f"Failed to decompress manifest database: {exc}"
-            ) from exc
+        # 3. Decompress (Bungie sometimes ships gzip, sometimes zip)
+        raw_path = DB_GZ_PATH
+        raw_bytes = raw_path.read_bytes()
+
+        if raw_bytes[:2] == b'\x1f\x8b':
+            # Gzip format
+            if progress_callback:
+                progress_callback(0.7, "Decompressing gzip manifest…")
+            try:
+                with gzip.open(raw_path, "rb") as f_in:
+                    with open(DB_PATH, "wb") as f_out:
+                        while True:
+                            chunk = f_in.read(1024 * 1024)
+                            if not chunk:
+                                break
+                            f_out.write(chunk)
+            except OSError as exc:
+                raise ManifestDownloadError(
+                    f"Failed to decompress gzip manifest: {exc}"
+                ) from exc
+        elif raw_bytes[:2] == b'PK':
+            # Zip format
+            if progress_callback:
+                progress_callback(0.7, "Decompressing zip manifest…")
+            try:
+                import zipfile
+                with zipfile.ZipFile(raw_path) as zf:
+                    # Find the SQLite file inside the zip
+                    names = zf.namelist()
+                    sqlite_files = [n for n in names if n.endswith('.sqlite') or n.endswith('.content') or n.endswith('.db')]
+                    if sqlite_files:
+                        target = sqlite_files[0]
+                    else:
+                        target = names[0]
+                    if progress_callback:
+                        progress_callback(0.75, f"Extracting {target}…")
+                    with zf.open(target) as f_in:
+                        with open(DB_PATH, "wb") as f_out:
+                            while True:
+                                chunk = f_in.read(1024 * 1024)
+                                if not chunk:
+                                    break
+                                f_out.write(chunk)
+                # Remove the zip after extraction
+                raw_path.unlink(missing_ok=True)
+                raw_path = Path()  # reset so we don't try to unlink again
+            except Exception as exc:
+                raise ManifestDownloadError(
+                    f"Failed to extract zip manifest: {exc}"
+                ) from exc
+        else:
+            # Assume it's already a raw SQLite
+            raw_path.rename(DB_PATH)
 
         # 4. Clean up the .gz file
         DB_GZ_PATH.unlink(missing_ok=True)
