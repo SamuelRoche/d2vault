@@ -29,6 +29,12 @@ import time
 from pathlib import Path
 from typing import Any
 
+try:
+    from .reporter import generate_short_summary, print_terminal_report, generate_html_report
+    _HAS_REPORTER = True
+except ImportError:
+    _HAS_REPORTER = False
+
 # ---------------------------------------------------------------------------
 # Project root & config path
 # ---------------------------------------------------------------------------
@@ -295,63 +301,29 @@ def cmd_analyze(args: argparse.Namespace) -> None:
     VaultAnalyzer = _import_matcher()
     if VaultAnalyzer is not None:
         print("\nAnalyzing god rolls…")
-        analyzer = VaultAnalyzer(mc)
-        matched_items = analyzer.match_all(items)
-        summary = analyzer.summarize(matched_items)
+        PROJECT_ROOT = Path(__file__).resolve().parent.parent
+        god_rolls_path = str(PROJECT_ROOT / "god_rolls" / "weapons.json")
+        analyzer = VaultAnalyzer(god_rolls_path)
+        result = analyzer.analyze_vault(items)
     else:
         print("  (matcher module not installed — skipping god-roll analysis)")
-        matched_items: list[dict[str, Any]] = []  # type: ignore[no-redef]
-        summary: dict[str, Any] = {  # type: ignore[no-redef]
-            "total": len(items),
-            "keeps": len(items),
-            "dismantle": 0,
-            "god_rolls": 0,
-        }
+        result = {"weapons": [], "armor": [], "summary": {
+            "total_items": len(items),
+            "total_weapons": 0, "total_armor": 0,
+            "keep_count": 0, "dismantle_count": 0,
+        }}
 
     # ---- Report ----
-    reporters = _import_reporter()
-    if reporters is not None:
-        print_terminal_report, generate_html_report = reporters
+    if _HAS_REPORTER:
+        print(generate_short_summary(result))
+        print()
+        print_terminal_report(result)
+
+        if args.html:
+            html_path = generate_html_report(result)
+            print(f"\n  HTML report: {html_path}")
     else:
-        print_terminal_report = None
-        generate_html_report = None
-
-    # Terminal report
-    if print_terminal_report is not None:
-        print_terminal_report(items, matched_items, summary)
-    else:
-        _print_fallback_report(items, summary)
-
-    # HTML report (optional)
-    html = getattr(args, "html", False)
-    output_dir = getattr(args, "output", None)
-
-    if html or output_dir:
-        if generate_html_report is not None:
-            if output_dir:
-                out = Path(output_dir)
-            else:
-                timestamp = time.strftime("%Y%m%d_%H%M%S")
-                out = PROJECT_ROOT / "reports"
-                out.mkdir(parents=True, exist_ok=True)
-                out = out / f"vault_report_{timestamp}.html"
-
-            print(f"\nGenerating HTML report → {out.resolve()}")
-            try:
-                generate_html_report(
-                    items,
-                    matched_items,
-                    summary,
-                    output_path=str(out),
-                    player_name=display_name,
-                )
-            except Exception as exc:
-                print(f"ERROR: Failed to write HTML report: {exc}")
-        else:
-            print(
-                "\nNOTE: reporter module not installed. "
-                "Install it or create src/reporter.py to enable HTML reports."
-            )
+        print(f"\n  Scanned {len(items)} items (reporter module missing for detailed report)")
 
     mc.close()
 
