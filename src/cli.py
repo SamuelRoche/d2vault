@@ -199,6 +199,13 @@ def cmd_oauth() -> None:
     if cfg is None:
         cfg = {}
 
+    # Ask for API key up front if missing
+    if "api_key" not in cfg or not cfg.get("api_key"):
+        cfg["api_key"] = _prompt("Enter your Bungie.net API key")
+        if not cfg["api_key"]:
+            print("ERROR: API key is required. Visit https://www.bungie.net/en/Application")
+            sys.exit(1)
+
     client_id = _prompt("Enter your Bungie OAuth client_id")
     if not client_id:
         print("ERROR: client_id is required. Find it at https://www.bungie.net/en/Application")
@@ -268,9 +275,6 @@ def cmd_oauth() -> None:
         sys.exit(1)
 
     # Save to config
-    if "api_key" not in cfg:
-        cfg["api_key"] = _prompt("Enter your Bungie.net API key (not yet configured)")
-
     cfg["oauth_token"] = access_token
     cfg["oauth_refresh_token"] = refresh_token
     cfg["oauth_client_id"] = client_id
