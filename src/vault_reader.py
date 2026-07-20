@@ -340,6 +340,7 @@ class VaultReader:
         stats_data: dict[str, Any] | None,
         sockets_data: dict[str, Any] | None,
         plug_states: dict[str, Any] | None,
+        plug_objectives: dict[str, Any] | None = None,
     ) -> None:
         """Enrich a partial item dict with instance/stat/socket data.
 
