@@ -37,12 +37,18 @@ BUCKET_ARMOR = 1423942364  # Helmet / Gauntlets / Chest / Legs / Class item
 BUCKET_GENERAL = 1107761855  # General / consumables / materials
 
 # Component IDs used when fetching the profile
-PROFILE_COMPONENTS = [
-    201,  # CharacterInventory
+# Some components require OAuth (201, 302, 307, 308)
+PUBLIC_COMPONENTS = [
+    100,  # Profiles
+    200,  # Characters
     205,  # CharacterEquipment
     300,  # ItemInstances
-    302,  # ItemStats
     304,  # ItemSockets
+]
+
+OAUTH_COMPONENTS = [
+    201,  # CharacterInventory
+    302,  # ItemStats
     307,  # ItemPlugStates
     308,  # ItemPlugObjectives
 ]
@@ -210,10 +216,18 @@ class VaultReader:
             tier, is_weapon, is_armor, perks, stats, masterwork, location,
             bucket_hash.
         """
+        # Use full components (including OAuth-required) if we have a token,
+        # otherwise fall back to public-only components (no vault reading).
+        if self.api.oauth_token:
+            components = PUBLIC_COMPONENTS + OAUTH_COMPONENTS
+        else:
+            components = PUBLIC_COMPONENTS
+            print("  [no OAuth token — vault won't be available, only equipped gear]")
+
         profile = self.api.get_profile(
             membership_type,
             membership_id,
-            components=PROFILE_COMPONENTS,
+            components=components,
         )
 
         items: list[dict[str, Any]] = []
