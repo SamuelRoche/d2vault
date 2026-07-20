@@ -282,8 +282,85 @@ def cmd_oauth() -> None:
     save_config(cfg)
 
     print(f"\n✅ OAuth token saved! Expires in {expires_in} seconds.")
-    print("   Run 'd2vault scan' to read your vault with full access.")
+
+    # If membership info is still missing, offer to fill it in now
+    if not cfg.get("membership_id"):
+        print("\nYou also need your Destiny membership ID configured.")
+        yn = input("Set it up now? [Y/n]: ").strip().lower()
+        if yn != "n":
+            cfg = _ensure_membership_config(cfg)
+
+    print("\n   Run 'python -m src.cli scan' to read your vault with full access.")
     print("=" * 60)
+
+
+# ---------------------------------------------------------------------------
+# Membership config (fill in gaps automatically)
+# ---------------------------------------------------------------------------
+
+
+def _ensure_membership_config(cfg: dict[str, Any]) -> dict[str, Any]:
+    """If membership_id is missing from config, prompt the user for it.
+
+    Searches Bungie by display name and saves to config so ``scan`` /
+    ``analyze`` never errors out on missing membership info.
+    """
+    if cfg.get("membership_id"):
+        return cfg  # already set
+
+    print()
+    print("── No Destiny membership configured — let's set it up ──")
+    print()
+
+    # 1. API key (needed for the search)
+    if not cfg.get("api_key"):
+        cfg["api_key"] = _prompt("Enter your Bungie.net API key")
+        if not cfg["api_key"]:
+            print("ERROR: API key is required. Visit https://www.bungie.net/en/Application")
+            sys.exit(1)
+
+    # 2. Platform
+    platform_str = _prompt(
+        f"Gaming platform ({'/'.join(PLATFORM_CHOICES)})", default="steam"
+    ).lower()
+    if platform_str not in PLATFORM_MAP:
+        print(
+            f"ERROR: Unknown platform '{platform_str}'. "
+            f"Choose from: {', '.join(PLATFORM_CHOICES)}"
+        )
+        sys.exit(1)
+    membership_type = PLATFORM_MAP[platform_str]
+
+    # 3. Display name
+    display_name = _prompt("Your Bungie display name (e.g. Kaz#9459)")
+    if not display_name:
+        print("ERROR: Display name is required.")
+        sys.exit(1)
+
+    # 4. Auto-search
+    print(f"\nSearching for '{display_name}' on {platform_str}…")
+    from src.bungie_api import BungieAPI
+
+    api = BungieAPI(cfg["api_key"])
+    try:
+        results = api.search_destiny_player(display_name, membership_type)
+    except Exception as exc:
+        print(f"ERROR: Search failed: {exc}")
+        sys.exit(1)
+
+    if not results:
+        print(f"ERROR: No player found for '{display_name}' on {platform_str}.")
+        sys.exit(1)
+
+    player = results[0]
+    cfg["platform"] = platform_str
+    cfg["membership_type"] = membership_type
+    cfg["membership_id"] = player["membershipId"]
+    cfg["display_name"] = player.get("displayName", display_name)
+
+    save_config(cfg)
+    print(f"  ✓ Saved {cfg['display_name']} (membership_id={cfg['membership_id']})\n")
+    return cfg
 
 
 # ---------------------------------------------------------------------------
@@ -341,8 +418,11 @@ def cmd_analyze(args: argparse.Namespace) -> None:
         print("ERROR: config.yaml is missing 'api_key'. Re-run with --setup.")
         sys.exit(1)
     if not membership_id:
-        print("ERROR: config.yaml is missing 'membership_id'. Re-run with --setup.")
-        sys.exit(1)
+        cfg = _ensure_membership_config(cfg)
+        membership_type = cfg.get("membership_type", membership_type)
+        membership_id = cfg.get("membership_id", 0)
+        display_name = cfg.get("display_name", "Guardian")
+        platform_str = cfg.get("platform", "steam")
 
     # ---- Connect to API ----
     print(f"Connecting to Bungie API as {display_name} ({platform_str})…")
