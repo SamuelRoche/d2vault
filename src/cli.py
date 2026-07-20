@@ -183,7 +183,102 @@ def cmd_setup() -> None:
         "display_name": actual_name,
     }
     save_config(cfg)
-    print("\nSetup complete! Run 'python -m src.cli analyze' to scan your vault.")
+    print("\nSetup complete! Run 'd2vault scan' to scan your vault.")
+    print("For vault access, run 'd2vault oauth' to set up OAuth.")
+    print("=" * 60)
+
+
+# ---------------------------------------------------------------------------
+# OAuth setup
+# ---------------------------------------------------------------------------
+
+
+def cmd_oauth() -> None:
+    """OAuth setup wizard — get a token so the tool can read your vault."""
+    cfg = load_config()
+    if cfg is None:
+        cfg = {}
+
+    client_id = _prompt("Enter your Bungie OAuth client_id")
+    if not client_id:
+        print("ERROR: client_id is required. Find it at https://www.bungie.net/en/Application")
+        sys.exit(1)
+
+    client_secret = _prompt("Enter your Bungie OAuth client_secret")
+    if not client_secret:
+        print("ERROR: client_secret is required.")
+        sys.exit(1)
+
+    auth_url = (
+        f"https://www.bungie.net/en/OAuth/Authorize"
+        f"?client_id={client_id}&response_type=code&state=destinyvaulttool"
+    )
+
+    print()
+    print("=" * 60)
+    print("  Destiny Vault Tool — OAuth Setup")
+    print("=" * 60)
+    print()
+    print("1. Open this URL in your browser:")
+    print(f"   {auth_url}")
+    print()
+    print("2. Log in to Bungie.net and Authorize the app.")
+    print()
+    print("3. You'll be redirected to a URL that looks like:")
+    print("   https://localhost:8080/?code=ABC123&state=destinyvaulttool")
+    print()
+    print("4. Copy the 'code' value from the URL (the part after 'code='")
+    print("   and before '&state') and paste it below.")
+    print()
+
+    auth_code = _prompt("Paste the authorization code from the URL")
+    if not auth_code:
+        print("ERROR: Authorization code is required.")
+        sys.exit(1)
+
+    print("\nExchanging code for access token…")
+
+    import requests
+
+    try:
+        resp = requests.post(
+            "https://www.bungie.net/Platform/App/OAuth/Token/",
+            data={
+                "grant_type": "authorization_code",
+                "code": auth_code,
+                "client_id": client_id,
+                "client_secret": client_secret,
+            },
+            headers={"Content-Type": "application/x-www-form-urlencoded"},
+            timeout=30,
+        )
+        resp.raise_for_status()
+        token_data = resp.json()
+    except Exception as exc:
+        print(f"ERROR: Failed to exchange code for token: {exc}")
+        sys.exit(1)
+
+    access_token = token_data.get("access_token", "")
+    refresh_token = token_data.get("refresh_token", "")
+    expires_in = token_data.get("expires_in", 0)
+    membership_id = token_data.get("membership_id", "")
+
+    if not access_token:
+        print(f"ERROR: No access_token in response: {token_data}")
+        sys.exit(1)
+
+    # Save to config
+    if "api_key" not in cfg:
+        cfg["api_key"] = _prompt("Enter your Bungie.net API key (not yet configured)")
+
+    cfg["oauth_token"] = access_token
+    cfg["oauth_refresh_token"] = refresh_token
+    cfg["oauth_client_id"] = client_id
+    cfg["oauth_client_secret"] = client_secret
+    save_config(cfg)
+
+    print(f"\n✅ OAuth token saved! Expires in {expires_in} seconds.")
+    print("   Run 'd2vault scan' to read your vault with full access.")
     print("=" * 60)
 
 
@@ -249,7 +344,8 @@ def cmd_analyze(args: argparse.Namespace) -> None:
     print(f"Connecting to Bungie API as {display_name} ({platform_str})…")
     from src.bungie_api import BungieAPI
 
-    api = BungieAPI(api_key)
+    oauth_token = cfg.get("oauth_token") or cfg.get("OAuth_token")
+    api = BungieAPI(api_key, oauth_token=oauth_token)
 
     # ---- Manifest ----
     from src.manifest_cache import ManifestCache
@@ -483,6 +579,17 @@ def build_parser() -> argparse.ArgumentParser:
         ),
     )
 
+    # oauth
+    oauth_parser = subparsers.add_parser(
+        "oauth",
+        help="Set up OAuth for vault access.",
+        description=(
+            "Walk through the Bungie OAuth flow to get a token that allows\n"
+            "reading your vault and character inventories. Requires Bungie\n"
+            "OAuth client_id and client_secret from bungie.net/en/Application."
+        ),
+    )
+
     return parser
 
 
@@ -502,6 +609,8 @@ def main(argv: list[str] | None = None) -> None:
         cmd_analyze(args)
     elif args.command == "update-god-rolls":
         cmd_update_god_rolls()
+    elif args.command == "oauth":
+        cmd_oauth()
     else:
         # No subcommand given and no --setup: default to analyze
         # Re-parse with analyze as default (argparse doesn't have a clean
