@@ -486,10 +486,17 @@ class VaultReader:
 
         Returns a list of structured item dicts with all fields populated.
         """
+        # Use full components (including OAuth-required) if we have a token
+        if self.api.oauth_token:
+            components = PUBLIC_COMPONENTS + OAUTH_COMPONENTS
+        else:
+            components = PUBLIC_COMPONENTS
+            print("  [no OAuth token — vault won't be available, only equipped gear]")
+
         profile = self.api.get_profile(
             membership_type,
             membership_id,
-            components=PROFILE_COMPONENTS,
+            components=components,
         )
 
         instances, stats, sockets, plug_states, plug_objectives = (
