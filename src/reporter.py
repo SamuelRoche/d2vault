@@ -9,8 +9,8 @@ Exports
 
 from __future__ import annotations
 
-import os
 import json
+import os
 from datetime import datetime
 from pathlib import Path
 from typing import Any, Optional
@@ -21,13 +21,16 @@ try:
 
     colorama.init(autoreset=True)
 except ImportError:
-    # Fallback if colorama isn't installed
     class _FakeStyle:
         def __getattr__(self, name: str) -> str:
             return ""
     Fore = _FakeStyle()
     Style = _FakeStyle()
     colorama = None
+
+# Project root — derived from this file's location
+_REPORTER_DIR = Path(__file__).resolve().parent
+_PROJECT_ROOT = _REPORTER_DIR.parent
 
 # ---------------------------------------------------------------------------
 # Colour helpers
@@ -188,7 +191,7 @@ def generate_html_report(
     date_str = datetime.now().strftime("%Y-%m-%d %H:%M")
 
     if output_path is None:
-        output_dir = os.path.expanduser("~/destiny-vault-tool/output")
+        output_dir = _PROJECT_ROOT / "reports"
         os.makedirs(output_dir, exist_ok=True)
         output_path = os.path.join(output_dir, f"vault_report_{timestamp}.html")
 
